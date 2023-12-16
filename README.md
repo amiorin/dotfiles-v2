@@ -1,3 +1,6 @@
+# Video
+* My endgame 2023. https://www.youtube.com/watch?v=8qOSunEy3jU
+
 # Script
 * RSI and small keyboards
 * https://peppe.rs/posts/programming_on_34_keys/
