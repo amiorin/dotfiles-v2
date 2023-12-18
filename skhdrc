@@ -4,10 +4,10 @@
 # alt - e : yabai -m space --focus 3 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
 # alt - r : yabai -m space --focus 4 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
 
-alt - a : yabai -m space --focus 1 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-alt - s : yabai -m space --focus 2 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-alt - d : yabai -m space --focus 3 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-alt - f : yabai -m space --focus 4 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
+alt - a : happy-yabai cmds move-or-next 1
+alt - s : happy-yabai cmds move-or-next 2
+alt - d : happy-yabai cmds move-or-next 3
+alt - f : happy-yabai cmds move-or-next 4
 
 # alt - z : yabai -m space --focus 9
 # alt - x : yabai -m space --focus 10
@@ -41,8 +41,8 @@ ctrl + alt - f : happy-yabai cmds move-or-prev 4
 # cycle layout
 alt - z : happy-yabai cmds cycle-layout
 # cycle
-alt - v : happy-yabai cmds cycle-win-and-stack
-ctrl + alt - v : yabai -m window --focus prev || yabai -m window --focus last
+#alt - v : happy-yabai cmds cycle-win-and-stack
+#ctrl + alt - v : yabai -m window --focus prev || yabai -m window --focus last
 
 # swap windows in display
 #alt - v : happy-yabai cmds swap-windows 1 2
@@ -79,11 +79,11 @@ ctrl + alt - v : yabai -m window --focus prev || yabai -m window --focus last
 # focus recent space
 #cmd + alt - r : yabai -m space --focus recent
 # maximize a window
-shift + alt - m : yabai -m window --toggle zoom-fullscreen
+#shift + alt - m : yabai -m window --toggle zoom-fullscreen
 # balance out tree of windows (resize to occupy same area)
-shift + alt - e : yabai -m space --balance
+#shift + alt - e : yabai -m space --balance
 # swap windows
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-shift + alt - h : yabai -m window --swap west
-shift + alt - l : yabai -m window --swap east
+#shift + alt - j : yabai -m window --swap south
+#shift + alt - k : yabai -m window --swap north
+#shift + alt - h : yabai -m window --swap west
+#shift + alt - l : yabai -m window --swap east
