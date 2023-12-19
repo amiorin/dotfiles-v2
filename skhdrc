@@ -1,89 +1,20 @@
-# # focus space #
-# alt - q : yabai -m space --focus 1 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-# alt - w : yabai -m space --focus 2 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-# alt - e : yabai -m space --focus 3 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-# alt - r : yabai -m space --focus 4 || yabai -m window --focus stack.next || yabai -m window --focus stack.first
-
+# focus to desktop or cycle windows forward (bsp and stack) if already there
 alt - a : happy-yabai cmds move-or-next 1
 alt - s : happy-yabai cmds move-or-next 2
 alt - d : happy-yabai cmds move-or-next 3
 alt - f : happy-yabai cmds move-or-next 4
 
-# alt - z : yabai -m space --focus 9
-# alt - x : yabai -m space --focus 10
-# alt - c : yabai -m space --focus 11
-# alt - v : yabai -m space --focus 12
-
-# move window to space #
-# ctrl + alt - q : happy-yabai cmds move-or-prev 1
-# ctrl + alt - w : happy-yabai cmds move-or-prev 2
-# ctrl + alt - e : happy-yabai cmds move-or-prev 3
-# ctrl + alt - r : happy-yabai cmds move-or-prev 4
-
+# move to desktop or cycle windows backward (bsp and stack) if already there
 ctrl + alt - a : happy-yabai cmds move-or-prev 1
 ctrl + alt - s : happy-yabai cmds move-or-prev 2
 ctrl + alt - d : happy-yabai cmds move-or-prev 3
 ctrl + alt - f : happy-yabai cmds move-or-prev 4
 
-# ctrl + alt - z : yabai -m window --space 9 && yabai -m space --focus 9
-# ctrl + alt - x : yabai -m window --space 10 && yabai -m space --focus 10
-# ctrl + alt - c : yabai -m window --space 11 && yabai -m space --focus 11
-# ctrl + alt - v : yabai -m window --space 12 && yabai -m space --focus 12
+# swap to desktop or cycle windows backward (bsp and stack) if already there
+shift + alt - a : happy-yabai cmds swap-or-prev 1
+shift + alt - s : happy-yabai cmds swap-or-prev 2
+shift + alt - d : happy-yabai cmds swap-or-prev 3
+shift + alt - f : happy-yabai cmds swap-or-prev 4
 
-# switch space left
-# alt - x : yabai -m space --focus prev || yabai -m space --focus last
-# alt - c : yabai -m space --focus next || yabai -m space --focus first
-
-# switch stack
-#alt - x : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
-#alt - c : yabai -m window --focus stack.next || yabai -m window --focus stack.first
-
-# cycle layout
+# cycle layout bsp and stack
 alt - z : happy-yabai cmds cycle-layout
-# cycle
-#alt - v : happy-yabai cmds cycle-win-and-stack
-#ctrl + alt - v : yabai -m window --focus prev || yabai -m window --focus last
-
-# swap windows in display
-#alt - v : happy-yabai cmds swap-windows 1 2
-#alt - v : happy-yabai cmds swap-spaces 1 2
-#alt - v : display=$(yabai -m query --windows | jq 'map(select(."has-focus"))[0].display') \
-#          && win1=$(yabai -m query --windows --display 1 | jq 'map(select(."is-visible"))[0].id') \
-#          && win2=$(yabai -m query --windows --display 2 | jq 'map(select(."is-visible"))[0].id') \
-#          && yabai -m window $win1 --display 2 \
-#          && yabai -m window $win2 --display 1 \
-#          && yabai -m display --focus $((3-display)) 
-#alt - a : wins=($(yabai -m query --windows | jq 'map(select(."is-visible"))[].id')) \
-#          && yabai -m window ${wins[2]} --swap ${wins[3]} \
-#          && yabai -m display --focus 2
-#ctrl + alt - g : yabai -m space --swap recent
-
-# move to left and focus
-# alt - w  : yabai -m window --display prev; yabai -m display --focus prev
-# alt - e  : yabai -m window --display next; yabai -m display --focus next
-
-#change focus between external displays (left and right)
-#cmd + alt - a : yabai -m display --focus west 
-#cmd + alt - f : yabai -m display --focus east
-# move space to display
-#alt - x : yabai -m space --display 1 || yabai -m space --create && yabai -m space --display 1
-#alt - c : yabai -m space --display 2 || yabai -m space --create && yabai -m space --display 2
-#alt - v : yabai -m space --display 3 || yabai -m space --create && yabai -m space --display 3
-
-# move windows through spaces
-#alt - x : yabai -m window --space prev || yabai -m window --space last; yabai -m space --focus prev || yabai -m space --focus last
-#alt - c : yabai -m window --space next || yabai -m window --space first; yabai -m space --focus next || yabai -m space --focus first
-
-
-
-# focus recent space
-#cmd + alt - r : yabai -m space --focus recent
-# maximize a window
-#shift + alt - m : yabai -m window --toggle zoom-fullscreen
-# balance out tree of windows (resize to occupy same area)
-#shift + alt - e : yabai -m space --balance
-# swap windows
-#shift + alt - j : yabai -m window --swap south
-#shift + alt - k : yabai -m window --swap north
-#shift + alt - h : yabai -m window --swap west
-#shift + alt - l : yabai -m window --swap east
