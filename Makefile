@@ -17,7 +17,7 @@ install:
 	mkdir -p ~/.config/skhd
 	cp skhdrc ~/.config/skhd/skhdrc
 	mkdir -p ~/.config/yabai
-	cp skhdrc ~/.config/yabai/yabairc
+	cp yabairc ~/.config/yabai/yabairc
 	mkdir -p ~/.local
 	cp fixterm ~/.local/fixterm
 	mkdir -p ~/.local/bin

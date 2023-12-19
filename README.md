@@ -35,6 +35,12 @@
 * Add https://github.com/amiorin/happy-yabai
 
 ```sh
+# editing mode
+micromamba env create -f environment.yml --prefix ./.conda
+fish_add_path .conda/bin/
+pip install pywatchman
+watchman-make -p '**' -t install
+
 # backup
 make
 
