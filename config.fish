@@ -7,6 +7,7 @@ fish_add_path $HOME/.tmux/plugins/tmuxifier/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.cargo/bin
 fish_add_path /opt/homebrew/opt/avr-gcc@8/bin
+fish_add_path /Applications/WezTerm.app/Contents/MacOS
 tmuxifier init - fish | source
 
 set -gx EDITOR nvim

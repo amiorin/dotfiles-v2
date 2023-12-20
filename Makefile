@@ -1,4 +1,4 @@
-all:
+status:
 	cp ~/.alacritty.yml alacritty.yml
 	cp ~/.tmux.conf tmux.conf
 	cp ~/.config/fish/config.fish config.fish
@@ -8,6 +8,7 @@ all:
 	cp ~/.local/bin/24-bit-color.sh 24-bit-color.sh
 	cp ~/.local/bin/sessions.sh sessions.sh
 	cp ~/.tmux/plugins/tmuxifier/layouts/* tmuxifier
+	cp ~/.config/wezterm/wezterm.lua wezterm.lua
 
 install:
 	cp alacritty.yml ~/.alacritty.yml
@@ -26,5 +27,7 @@ install:
 	cp sessions.sh ~/.local/bin/sessions.sh
 	mkdir -p ~/.tmux/plugins/tmuxifier/layouts
 	cp tmuxifier/* ~/.tmux/plugins/tmuxifier/layouts
+	mkdir -p ~/.config/wezterm
+	cp wezterm.lua ~/.config/wezterm/wezterm.lua
 
-.PHONY: all install
+.PHONY: status install

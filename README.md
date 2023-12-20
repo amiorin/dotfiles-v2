@@ -20,7 +20,7 @@
 
 
 # My config files
-* https://github.com/alacritty/alacritty
+* https://github.com/wez/wezterm
 * https://fishshell.com/
 * https://github.com/koekeishiya/yabai
 * https://github.com/koekeishiya/skhd
@@ -41,9 +41,9 @@ fish_add_path .conda/bin/
 pip install pywatchman
 watchman-make -p '**' -t install
 
-# backup
-make
+# check drift
+make status
 
-# restore
+# install changes
 make install
 ```
