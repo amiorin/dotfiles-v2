@@ -42,12 +42,12 @@ config.keys = {
   {
     key = 'w',
     mods = 'CMD',
-    action = wezterm.action.CloseCurrentPane { confirm = true },
+    action = wezterm.action.CloseCurrentPane { confirm = false },
   },
   { 
     key = 'q',
     mods = 'CMD',
-    action = wezterm.action.DisableDefaultAssignment,
+    action = wezterm.action.QuitApplication,
   },
   {
     key = 'k',
@@ -81,6 +81,16 @@ config.keys = {
 config.adjust_window_size_when_changing_font_size = false
 config.window_decorations = "RESIZE"
 config.color_scheme = 'Afterglow'
+config.unix_domains = {
+  {
+    name = 'unix',
+  },
+}
+config.window_close_confirmation = 'NeverPrompt'
+config.default_gui_startup_args = { 'connect', 'unix' }
+wezterm.on('mux-is-process-stateful', function(proc)
+  return nil
+end)
 
 -- and finally, return the configuration to wezterm
 return config
