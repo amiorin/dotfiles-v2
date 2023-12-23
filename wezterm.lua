@@ -77,6 +77,11 @@ config.keys = {
     mods = 'CTRL',
     action = act.ActivatePaneDirection 'Down',
   },
+  {
+    key = 'p',
+    mods = 'CMD|SHIFT',
+    action = wezterm.action.ActivateCommandPalette,
+  },
 }
 config.adjust_window_size_when_changing_font_size = false
 config.window_decorations = "RESIZE"
@@ -91,6 +96,8 @@ config.default_gui_startup_args = { 'connect', 'unix' }
 wezterm.on('mux-is-process-stateful', function(proc)
   return nil
 end)
+config.command_palette_font_size = 18.0
+
 
 -- and finally, return the configuration to wezterm
 return config

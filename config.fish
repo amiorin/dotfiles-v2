@@ -12,6 +12,8 @@ tmuxifier init - fish | source
 
 set -gx EDITOR nvim
 set -gx POETRY_VIRTUALENVS_IN_PROJECT true
+# https://www.packetmischief.ca/2016/09/06/ssh-agent-on-os-x/
+set -gx SSH_AUTH_SOCK (launchctl getenv SSH_AUTH_SOCK)
 set -g fish_greeting
 
 # https://the.exa.website/
