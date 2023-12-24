@@ -27,27 +27,27 @@ config.keys = {
   {
     key = 'm',
     mods = 'CMD',
-    action = wezterm.action.DisableDefaultAssignment,
+    action = act.DisableDefaultAssignment,
   },
   {
     key = 'd',
     mods = 'CMD',
-    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+    action = act.SplitHorizontal { domain = 'CurrentPaneDomain' },
   },
   {
     key = 'd',
     mods = 'CMD|SHIFT',
-    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+    action = act.SplitVertical { domain = 'CurrentPaneDomain' },
   },
   {
     key = 'w',
     mods = 'CMD',
-    action = wezterm.action.CloseCurrentPane { confirm = false },
+    action = act.CloseCurrentPane { confirm = false },
   },
   { 
     key = 'q',
     mods = 'CMD',
-    action = wezterm.action.QuitApplication,
+    action = act.QuitApplication,
   },
   {
     key = 'k',
@@ -80,8 +80,14 @@ config.keys = {
   {
     key = 'p',
     mods = 'CMD|SHIFT',
-    action = wezterm.action.ActivateCommandPalette,
+    action = act.ActivateCommandPalette,
   },
+  {
+    key = 'p',
+    mods = 'CMD',
+    action = act.ShowLauncher,
+  },
+
 }
 config.adjust_window_size_when_changing_font_size = false
 config.window_decorations = "RESIZE"
@@ -90,6 +96,9 @@ config.unix_domains = {
   {
     name = 'unix',
   },
+  {
+    name = 'dotfiles',
+  },
 }
 config.window_close_confirmation = 'NeverPrompt'
 config.default_gui_startup_args = { 'connect', 'unix' }
@@ -97,6 +106,7 @@ wezterm.on('mux-is-process-stateful', function(proc)
   return nil
 end)
 config.command_palette_font_size = 18.0
+config.quit_when_all_windows_are_closed = false
 
 
 -- and finally, return the configuration to wezterm
