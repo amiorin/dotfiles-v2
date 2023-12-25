@@ -102,6 +102,21 @@ config.keys = {
       flags = 'FUZZY|WORKSPACES',
     },
   },
+  {
+    key = 'f',
+    mods = 'CTRL|CMD',
+    action = act.ActivateCopyMode
+  },
+}
+config.key_tables = {
+  search_mode = {
+    { key = 'Enter', mods = 'NONE', action = act.CopyMode 'PriorMatch' },
+    { key = 'Escape', mods = 'NONE', action = act.CopyMode 'Close' },
+    { key = 'r', mods = 'CTRL', action = act.CopyMode 'CycleMatchType' },
+    { key = 'u', mods = 'CTRL', action = act.CopyMode 'ClearPattern' },
+    { key = 'g', mods = 'CMD|SHIFT', action = act.CopyMode 'PriorMatch' },
+    { key = 'g', mods = 'CMD', action = act.CopyMode 'NextMatch' },
+  },
 }
 config.adjust_window_size_when_changing_font_size = false
 config.window_decorations = "RESIZE"
