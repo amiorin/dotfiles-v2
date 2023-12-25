@@ -87,7 +87,21 @@ config.keys = {
     mods = 'CMD',
     action = act.ShowLauncher,
   },
-
+  { key = '[',
+    mods = 'CMD',
+    action = act.SwitchWorkspaceRelative(1)
+  },
+  { key = ']',
+    mods = 'CMD',
+    action = act.SwitchWorkspaceRelative(-1)
+  },
+  {
+    key = 'v',
+    mods = 'ALT',
+    action = act.ShowLauncherArgs {
+      flags = 'FUZZY|WORKSPACES',
+    },
+  },
 }
 config.adjust_window_size_when_changing_font_size = false
 config.window_decorations = "RESIZE"
@@ -95,19 +109,29 @@ config.color_scheme = 'Afterglow'
 config.unix_domains = {
   {
     name = 'unix',
-  },
-  {
-    name = 'dotfiles',
-  },
+  }
 }
 config.window_close_confirmation = 'NeverPrompt'
 config.default_gui_startup_args = { 'connect', 'unix' }
-wezterm.on('mux-is-process-stateful', function(proc)
-  return nil
-end)
 config.command_palette_font_size = 18.0
 config.quit_when_all_windows_are_closed = false
 
+wezterm.on('mux-is-process-stateful', function(proc)
+  return nil
+end)
+
+wezterm.on('format-tab-title', function(tab)
+  local pane = tab.active_pane
+  local title = pane.title
+  if pane.domain_name then
+    title = title .. ' - (' .. pane.domain_name .. ')'
+  end
+  return title
+end)
+
+wezterm.on('update-status', function(window, pane)
+  window:set_right_status(window:active_workspace() .. '  ')
+end)
 
 -- and finally, return the configuration to wezterm
 return config
