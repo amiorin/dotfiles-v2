@@ -1,7 +1,7 @@
 -- https://hackernoon.com/get-the-most-out-of-your-terminal-a-comprehensive-guide-to-wezterm-configuration
 -- Pull in the wezterm API
 local wezterm = require 'wezterm'
-local mux = wezterm.mux
+-- local mux = wezterm.mux
 local act = wezterm.action
 
 -- This table will hold the configuration.
@@ -20,7 +20,7 @@ end
 -- Spawn a fish shell in login mode
 config.default_prog = { '/opt/homebrew/bin/fish', '-l' }
 config.font = wezterm.font 'JetBrains Mono'
-config.font_size = 14
+config.font_size = 20
 config.keys = {
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
   -- be potentially recognized and handled by the tab
@@ -44,7 +44,7 @@ config.keys = {
     mods = 'CMD',
     action = act.CloseCurrentPane { confirm = false },
   },
-  { 
+  {
     key = 'q',
     mods = 'CMD',
     action = act.QuitApplication,
@@ -132,6 +132,7 @@ config.command_palette_font_size = 18.0
 config.quit_when_all_windows_are_closed = false
 
 wezterm.on('mux-is-process-stateful', function(proc)
+  _ = proc
   return nil
 end)
 
@@ -145,6 +146,7 @@ wezterm.on('format-tab-title', function(tab)
 end)
 
 wezterm.on('update-status', function(window, pane)
+  _ = pane
   window:set_right_status(window:active_workspace() .. '  ')
 end)
 
