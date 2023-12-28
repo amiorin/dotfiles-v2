@@ -9,6 +9,7 @@ status:
 	cp ~/.local/bin/sessions.sh sessions.sh
 	cp ~/.tmux/plugins/tmuxifier/layouts/* tmuxifier
 	cp ~/.config/wezterm/wezterm.lua wezterm.lua
+	cp ~/.config/neovide/config.toml config.toml
 
 install:
 	cp alacritty.yml ~/.alacritty.yml
@@ -29,5 +30,7 @@ install:
 	cp tmuxifier/* ~/.tmux/plugins/tmuxifier/layouts
 	mkdir -p ~/.config/wezterm
 	cp wezterm.lua ~/.config/wezterm/wezterm.lua
+	mkdir -p ~/.config/neovide
+	cp config.toml ~/.config/neovide/config.toml
 
 .PHONY: status install

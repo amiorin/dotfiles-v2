@@ -61,7 +61,7 @@ function login_aws
         echo "Connecting to OneFootball Prod"
         set -gx SAML2AWS_URL https://sso.jumpcloud.com/saml2/awsproddataeng
         saml2aws login --force
-    else if [ account = single-stg ]
+    else if [ $account = single-stg ]
         echo "Connecting to Data Staging"
         set -gx SAML2AWS_URL https://sso.jumpcloud.com/saml2/awsdatateamstg
         saml2aws login --force
