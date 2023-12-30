@@ -10,6 +10,7 @@ status:
 	cp ~/.tmux/plugins/tmuxifier/layouts/* tmuxifier
 	cp ~/.config/wezterm/wezterm.lua wezterm.lua
 	cp ~/.config/neovide/config.toml config.toml
+	cp ~/.config/direnv/direnv.toml direnv.toml
 
 install:
 	cp alacritty.yml ~/.alacritty.yml
@@ -32,5 +33,7 @@ install:
 	cp wezterm.lua ~/.config/wezterm/wezterm.lua
 	mkdir -p ~/.config/neovide
 	cp config.toml ~/.config/neovide/config.toml
+	mkdir -p ~/.config/direnv
+	cp ~/.config/direnv/direnv.toml direnv.toml
 
 .PHONY: status install

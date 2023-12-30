@@ -1,6 +1,7 @@
 /opt/homebrew/bin/brew shellenv | source
 starship init fish | source
 zoxide init fish | source
+direnv hook fish | source
 fish_vi_key_bindings
 # https://github.com/jimeh/tmuxifier
 fish_add_path $HOME/.tmux/plugins/tmuxifier/bin
