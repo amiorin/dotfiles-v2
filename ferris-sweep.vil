@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "uid": 17515533355909552000,
+  "uid": 17515533355909551943,
   "layout": [
     [
       [
@@ -49,11 +49,11 @@
         "KC_N",
         "KC_M",
         "KC_COMMA",
-        "LALT_T(KC_DOT)",
-        "RSFT_T(KC_QUOTE)"
+        "KC_DOT",
+        "LSFT_T(KC_QUOTE)"
       ],
       [
-        "LT2(KC_SPACE)",
+        "LT3(KC_SPACE)",
         "LCTL_T(KC_ENTER)",
         -1,
         -1,
@@ -83,7 +83,7 @@
         "KC_NO"
       ],
       [
-        "LGUI_T(KC_TAB)",
+        "KC_TRNS",
         "DF(0)",
         -1,
         -1,
@@ -111,7 +111,7 @@
         "RSFT_T(KC_QUOTE)"
       ],
       [
-        "LT2(KC_SPACE)",
+        "KC_TRNS",
         "LCTL_T(KC_ENTER)",
         -1,
         -1,
@@ -141,7 +141,7 @@
         "KC_NO"
       ],
       [
-        "KC_NO",
+        "KC_TRNS",
         "DF(0)",
         -1,
         -1,
@@ -169,7 +169,7 @@
         "KC_NO"
       ],
       [
-        "KC_SPACE",
+        "KC_TRNS",
         "KC_F",
         -1,
         -1,
@@ -199,7 +199,7 @@
         "LSFT(KC_3)"
       ],
       [
-        "KC_NO",
+        "KC_TRNS",
         "DF(1)",
         -1,
         -1,
@@ -253,7 +253,7 @@
         "LALT(KC_Z)",
         "KC_I",
         "KC_O",
-        "KC_NO",
+        "LALT(KC_V)",
         "LCTL(KC_UP)"
       ],
       [
@@ -264,7 +264,7 @@
         -1
       ],
       [
-        "KC_NO",
+        "KC_MPLY",
         "KC_WH_U",
         "KC_WH_D",
         "KC_HOME",
@@ -278,14 +278,14 @@
         "KC_BSPACE"
       ],
       [
-        "KC_NO",
+        "0xc29",
         "LGUI(KC_0)",
         "LGUI(KC_MINUS)",
         "LGUI(KC_EQUAL)",
         "KC_LSHIFT"
       ],
       [
-        "DF(3)",
+        "DF(2)",
         "KC_LCTRL",
         -1,
         -1,
@@ -546,7 +546,7 @@
       "options": 135
     },
     {
-      "trigger": "LALT_T(KC_DOT)",
+      "trigger": "KC_DOT",
       "replacement": "RALT(KC_E)",
       "layers": 1,
       "trigger_mods": 2,
@@ -555,7 +555,7 @@
       "options": 135
     },
     {
-      "trigger": "RSFT_T(KC_QUOTE)",
+      "trigger": "LSFT_T(KC_QUOTE)",
       "replacement": "RALT(KC_U)",
       "layers": 1,
       "trigger_mods": 2,
@@ -564,22 +564,22 @@
       "options": 135
     },
     {
-      "trigger": "KC_M",
-      "replacement": "KC_0",
-      "layers": 2,
+      "trigger": "KC_Q",
+      "replacement": "KC_NO",
+      "layers": 1,
       "trigger_mods": 8,
       "negative_mod_mask": 7,
       "suppressed_mods": 0,
-      "options": 7
+      "options": 135
     },
     {
-      "trigger": "KC_COMMA",
-      "replacement": "KC_MINUS",
-      "layers": 2,
-      "trigger_mods": 8,
-      "negative_mod_mask": 7,
-      "suppressed_mods": 0,
-      "options": 7
+      "trigger": "KC_Q",
+      "replacement": "LGUI(KC_Q)",
+      "layers": 1,
+      "trigger_mods": 9,
+      "negative_mod_mask": 6,
+      "suppressed_mods": 9,
+      "options": 135
     },
     {
       "trigger": "KC_DOT",
