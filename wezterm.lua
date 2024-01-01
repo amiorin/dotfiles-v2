@@ -32,12 +32,16 @@ config.keys = {
   {
     key = 'd',
     mods = 'CMD',
-    action = act.SplitHorizontal { domain = 'CurrentPaneDomain' },
+    action = act.SplitPane {
+      direction = 'Up'
+    },
   },
   {
     key = 'd',
-    mods = 'CMD|SHIFT',
-    action = act.SplitVertical { domain = 'CurrentPaneDomain' },
+    mods = 'CTRL|CMD',
+    action = act.SplitPane {
+      direction = 'Left'
+    },
   },
   {
     key = 'w',
@@ -87,11 +91,13 @@ config.keys = {
     mods = 'CMD',
     action = act.ShowLauncher,
   },
-  { key = '[',
+  {
+    key = '[',
     mods = 'CMD',
     action = act.SwitchWorkspaceRelative(1)
   },
-  { key = ']',
+  {
+    key = ']',
     mods = 'CMD',
     action = act.SwitchWorkspaceRelative(-1)
   },
@@ -103,19 +109,19 @@ config.keys = {
     },
   },
   {
-    key = 'f',
-    mods = 'CTRL|CMD',
+    key = 'Backspace',
+    mods = 'CMD',
     action = act.ActivateCopyMode
   },
 }
 config.key_tables = {
   search_mode = {
-    { key = 'Enter', mods = 'NONE', action = act.CopyMode 'PriorMatch' },
-    { key = 'Escape', mods = 'NONE', action = act.CopyMode 'Close' },
-    { key = 'r', mods = 'CTRL', action = act.CopyMode 'CycleMatchType' },
-    { key = 'u', mods = 'CTRL', action = act.CopyMode 'ClearPattern' },
-    { key = 'g', mods = 'CMD|SHIFT', action = act.CopyMode 'PriorMatch' },
-    { key = 'g', mods = 'CMD', action = act.CopyMode 'NextMatch' },
+    { key = 'Enter',  mods = 'NONE',      action = act.CopyMode 'PriorMatch' },
+    { key = 'Escape', mods = 'NONE',      action = act.CopyMode 'Close' },
+    { key = 'r',      mods = 'CTRL',      action = act.CopyMode 'CycleMatchType' },
+    { key = 'u',      mods = 'CTRL',      action = act.CopyMode 'ClearPattern' },
+    { key = 'g',      mods = 'CMD|SHIFT', action = act.CopyMode 'PriorMatch' },
+    { key = 'g',      mods = 'CMD',       action = act.CopyMode 'NextMatch' },
   },
 }
 config.adjust_window_size_when_changing_font_size = false

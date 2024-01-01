@@ -24,20 +24,9 @@ alias ls=exa
 alias ll="ls -lh"
 alias l="ls -la"
 alias rt="ls -l --sort newest"
-
 alias u="cd .."
-alias t=tmux
-alias n="NVIM_APPNAME=jose nvim"
-alias c="NVIM_APPNAME=cool nvim"
-alias r="NVIM_APPNAME=rocks nvim"
-alias y="NVIM_APPNAME=LazyVim nvim"
-alias d='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias dl='lazygit --work-tree=/Users/amiorin --git-dir=/Users/amiorin/.dotfiles'
+alias n="NVIM_APPNAME=nvim neovide"
 alias tldrf='tldr --list | fzf --preview "tldr {1}" --preview-window=right,60% | xargs tldr'
-
-# harpoon
-alias h='/usr/bin/git --git-dir=$HOME/code/personal/phoenix/.harpoon/ --work-tree=$HOME/code/personal/phoenix'
-alias hl='lazygit --work-tree=/Users/amiorin/code/personal/phoenix --git-dir=/Users/amiorin/code/personal/phoenix/.harpoon'
 
 function nvims
     set items cool rocks default kickstart NvChad AstroNvim LazyVim jose
