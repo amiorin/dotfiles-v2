@@ -33,14 +33,14 @@ config.keys = {
     key = 'd',
     mods = 'CMD',
     action = act.SplitPane {
-      direction = 'Up'
+      direction = 'Left'
     },
   },
   {
     key = 'd',
     mods = 'CTRL|CMD',
     action = act.SplitPane {
-      direction = 'Left'
+      direction = 'Up'
     },
   },
   {
