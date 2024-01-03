@@ -49,7 +49,7 @@
         "KC_N",
         "KC_M",
         "KC_COMMA",
-        "KC_DOT",
+        "LALT_T(KC_DOT)",
         "LSFT_T(KC_QUOTE)"
       ],
       [
@@ -106,13 +106,13 @@
       [
         "KC_NO",
         "KC_NO",
-        "KC_COMMA",
-        "LALT_T(KC_DOT)",
-        "RSFT_T(KC_QUOTE)"
+        "KC_TRNS",
+        "KC_TRNS",
+        "KC_TRNS"
       ],
       [
         "KC_TRNS",
-        "LCTL_T(KC_ENTER)",
+        "KC_TRNS",
         -1,
         -1,
         -1
@@ -247,14 +247,14 @@
         "LALT(KC_S)",
         "LALT(KC_D)",
         "LALT(KC_F)",
-        "LCTL(KC_DOWN)"
+        "LALT(KC_G)"
       ],
       [
         "LALT(KC_Z)",
         "KC_I",
         "KC_O",
         "LALT(KC_V)",
-        "LCTL(KC_UP)"
+        "LALT(KC_B)"
       ],
       [
         "KC_NO",
@@ -264,7 +264,7 @@
         -1
       ],
       [
-        "KC_MPLY",
+        "LCG(KC_Q)",
         "KC_WH_U",
         "KC_WH_D",
         "KC_HOME",
@@ -401,11 +401,11 @@
       "KC_CAPSLOCK"
     ],
     [
+      "KC_J",
+      "KC_K",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
-      "KC_NO",
-      "KC_NO"
+      "KC_LALT"
     ],
     [
       "KC_NO",
@@ -546,7 +546,7 @@
       "options": 135
     },
     {
-      "trigger": "KC_DOT",
+      "trigger": "LALT_T(KC_DOT)",
       "replacement": "RALT(KC_E)",
       "layers": 1,
       "trigger_mods": 2,
