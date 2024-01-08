@@ -1,4 +1,5 @@
 /opt/homebrew/bin/brew shellenv | source
+#micromamba shell hook --shell fish | source 
 starship init fish | source
 zoxide init fish | source
 direnv hook fish | source
