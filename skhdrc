@@ -1,38 +1,38 @@
 # focus to desktop or cycle windows forward (bsp and stack) if already there
-alt - a : happy-yabai cmds move-or-next 1
-alt - z : happy-yabai cmds move-or-next 2
-alt - s : happy-yabai cmds move-or-next 3
-alt - d : happy-yabai cmds move-or-next 4
-alt - f : happy-yabai cmds move-or-next 5
-alt - x : happy-yabai cmds move-or-next 6
-alt - c : happy-yabai cmds move-or-next 7
-alt - v : happy-yabai cmds move-or-next 8
-alt - g : happy-yabai cmds move-or-next 9
-alt - b : happy-yabai cmds move-or-next 10
+cmd + alt - a : happy-yabai cmds move-or-next 1
+cmd + alt - z : happy-yabai cmds move-or-next 2
+cmd + alt - s : happy-yabai cmds move-or-next 3
+cmd + alt - d : happy-yabai cmds move-or-next 4
+cmd + alt - f : happy-yabai cmds move-or-next 5
+cmd + alt - x : happy-yabai cmds move-or-next 6
+cmd + alt - c : happy-yabai cmds move-or-next 7
+cmd + alt - v : happy-yabai cmds move-or-next 8
+cmd + alt - g : happy-yabai cmds move-or-next 9
+cmd + alt - b : happy-yabai cmds move-or-next 10
 
 # move to desktop or cycle windows backward (bsp and stack) if already there
-ctrl + alt - a : happy-yabai cmds move-or-prev 1
-ctrl + alt - z : happy-yabai cmds move-or-prev 2
-ctrl + alt - s : happy-yabai cmds move-or-prev 3
-ctrl + alt - d : happy-yabai cmds move-or-prev 4
-ctrl + alt - f : happy-yabai cmds move-or-prev 5
-ctrl + alt - x : happy-yabai cmds move-or-prev 6
-ctrl + alt - c : happy-yabai cmds move-or-prev 7
-ctrl + alt - v : happy-yabai cmds move-or-prev 8
-ctrl + alt - g : happy-yabai cmds move-or-prev 9
-ctrl + alt - b : happy-yabai cmds move-or-prev 10
+cmd + ctrl + alt - a : happy-yabai cmds move-or-prev 1
+cmd + ctrl + alt - z : happy-yabai cmds move-or-prev 2
+cmd + ctrl + alt - s : happy-yabai cmds move-or-prev 3
+cmd + ctrl + alt - d : happy-yabai cmds move-or-prev 4
+cmd + ctrl + alt - f : happy-yabai cmds move-or-prev 5
+cmd + ctrl + alt - x : happy-yabai cmds move-or-prev 6
+cmd + ctrl + alt - c : happy-yabai cmds move-or-prev 7
+cmd + ctrl + alt - v : happy-yabai cmds move-or-prev 8
+cmd + ctrl + alt - g : happy-yabai cmds move-or-prev 9
+cmd + ctrl + alt - b : happy-yabai cmds move-or-prev 10
 
 # swap to desktop or cycle windows backward (bsp and stack) if already there
-shift + alt - a : happy-yabai cmds swap-or-prev 1
-shift + alt - s : happy-yabai cmds swap-or-prev 2
-shift + alt - d : happy-yabai cmds swap-or-prev 3
-shift + alt - f : happy-yabai cmds swap-or-prev 4
-shift + alt - g : happy-yabai cmds swap-or-prev 5
-shift + alt - z : happy-yabai cmds swap-or-prev 6
-shift + alt - x : happy-yabai cmds swap-or-prev 7
-shift + alt - c : happy-yabai cmds swap-or-prev 8
-shift + alt - v : happy-yabai cmds swap-or-prev 9
-shift + alt - b : happy-yabai cmds swap-or-prev 10
+cmd + shift + alt - a : happy-yabai cmds swap-or-prev 1
+cmd + shift + alt - s : happy-yabai cmds swap-or-prev 2
+cmd + shift + alt - d : happy-yabai cmds swap-or-prev 3
+cmd + shift + alt - f : happy-yabai cmds swap-or-prev 4
+cmd + shift + alt - g : happy-yabai cmds swap-or-prev 5
+cmd + shift + alt - z : happy-yabai cmds swap-or-prev 6
+cmd + shift + alt - x : happy-yabai cmds swap-or-prev 7
+cmd + shift + alt - c : happy-yabai cmds swap-or-prev 8
+cmd + shift + alt - v : happy-yabai cmds swap-or-prev 9
+cmd + shift + alt - b : happy-yabai cmds swap-or-prev 10
 
 # cycle layout bsp and stack
-alt - u : happy-yabai cmds cycle-layout
+cmd + alt - u : happy-yabai cmds cycle-layout
