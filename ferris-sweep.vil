@@ -294,57 +294,57 @@
     ],
     [
       [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "LSFT(KC_EQUAL)",
+        "KC_SLASH",
+        "LSFT(KC_LBRACKET)",
+        "LSFT(KC_RBRACKET)",
+        "LSFT(KC_5)"
       ],
       [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "KC_MINUS",
+        "LSFT(KC_QUOTE)",
+        "LSFT(KC_9)",
+        "LSFT(KC_0)",
+        "LSFT(KC_6)"
       ],
       [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "LSFT(KC_MINUS)",
+        "KC_GRAVE",
+        "KC_LBRACKET",
+        "KC_RBRACKET",
+        "LSFT(KC_3)"
       ],
       [
-        "KC_TRNS",
-        "KC_TRNS",
+        "TD(0)",
+        "MO(3)",
         -1,
         -1,
         -1
       ],
       [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "LSFT(KC_7)",
+        "LSFT(KC_1)",
+        "LSFT(KC_GRAVE)",
+        "KC_BSLASH",
+        "LSFT(KC_BSLASH)"
       ],
       [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "LSFT(KC_4)",
+        "KC_SCOLON",
+        "LSFT(KC_SCOLON)",
+        "KC_EQUAL",
+        "KC_BSPACE"
       ],
       [
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS",
-        "KC_TRNS"
+        "LSFT(KC_8)",
+        "LSFT(KC_SLASH)",
+        "LSFT(KC_COMMA)",
+        "LSFT(KC_DOT)",
+        "LSFT(KC_2)"
       ],
       [
-        "KC_TRNS",
-        "KC_TRNS",
+        "KC_NO",
+        "KC_NO",
         -1,
         -1,
         -1
