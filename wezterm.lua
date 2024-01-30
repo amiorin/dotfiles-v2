@@ -62,26 +62,6 @@ config.keys = {
     },
   },
   {
-    key = 'h',
-    mods = 'CTRL',
-    action = act.ActivatePaneDirection 'Left',
-  },
-  {
-    key = 'l',
-    mods = 'CTRL',
-    action = act.ActivatePaneDirection 'Right',
-  },
-  {
-    key = 'k',
-    mods = 'CTRL',
-    action = act.ActivatePaneDirection 'Up',
-  },
-  {
-    key = 'j',
-    mods = 'CTRL',
-    action = act.ActivatePaneDirection 'Down',
-  },
-  {
     key = 'p',
     mods = 'CMD|SHIFT',
     action = act.ActivateCommandPalette,
