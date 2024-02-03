@@ -34,6 +34,6 @@ install:
 	mkdir -p ~/.config/neovide
 	cp config.toml ~/.config/neovide/config.toml
 	mkdir -p ~/.config/direnv
-	cp ~/.config/direnv/direnv.toml direnv.toml
+	cp direnv.toml ~/.config/direnv/direnv.toml
 
 .PHONY: status install

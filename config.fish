@@ -1,5 +1,5 @@
 /opt/homebrew/bin/brew shellenv | source
-#micromamba shell hook --shell fish | source 
+# micromamba shell hook --shell fish | source 
 starship init fish | source
 zoxide init fish | source
 direnv hook fish | source
@@ -12,7 +12,7 @@ fish_add_path $HOME/go/bin
 fish_add_path /opt/homebrew/opt/avr-gcc@8/bin
 fish_add_path /Applications/WezTerm.app/Contents/MacOS
 fish_add_path /Applications/neovide.app/Contents/MacOS
-tmuxifier init - fish | source
+# tmuxifier init - fish | source
 
 set -gx EDITOR nvim
 set -gx POETRY_VIRTUALENVS_IN_PROJECT true
@@ -21,7 +21,7 @@ set -gx SSH_AUTH_SOCK (launchctl getenv SSH_AUTH_SOCK)
 set -g fish_greeting
 
 # https://the.exa.website/
-alias ls=exa
+alias ls=eza
 alias ll="ls -lh"
 alias l="ls -la"
 alias rt="ls -l --sort newest"
