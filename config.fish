@@ -15,6 +15,8 @@ fish_add_path /Applications/neovide.app/Contents/MacOS
 # tmuxifier init - fish | source
 
 set -gx EDITOR "emacsclient -a '' -t"
+# for lazygit https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#user-config
+# set -gx XDG_CONFIG_HOME "$HOME/.config"
 alias emacs=$EDITOR
 set -gx POETRY_VIRTUALENVS_IN_PROJECT true
 # https://www.packetmischief.ca/2016/09/06/ssh-agent-on-os-x/

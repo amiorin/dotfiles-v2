@@ -8,6 +8,7 @@ brew install --cask spaceid
 brew install --cask keycastr
 brew install --cask raycast
 brew install --cask monitorcontrol
+brew install --cask wezterm
 ```
 
 # WezTerm and Zellij prev and next tab
