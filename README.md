@@ -10,6 +10,9 @@ brew install --cask raycast
 brew install --cask monitorcontrol
 ```
 
+# Accents
+https://apple.stackexchange.com/a/332770
+
 # Script
 * RSI and small keyboards
 * https://peppe.rs/posts/programming_on_34_keys/
