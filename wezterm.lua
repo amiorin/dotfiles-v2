@@ -25,6 +25,26 @@ config.keys = {
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
   -- be potentially recognized and handled by the tab
   {
+    key = 'h',
+    mods = 'CTRL',
+    action = act.SendKey { key = 'h', mods = 'ALT' },
+  },
+  {
+    key = 'j',
+    mods = 'CTRL',
+    action = act.SendKey { key = 'j', mods = 'ALT' },
+  },
+  {
+    key = 'k',
+    mods = 'CTRL',
+    action = act.SendKey { key = 'k', mods = 'ALT' },
+  },
+  {
+    key = 'l',
+    mods = 'CTRL',
+    action = act.SendKey { key = 'l', mods = 'ALT' },
+  },
+  {
     key = 'm',
     mods = 'CMD',
     action = act.DisableDefaultAssignment,
@@ -107,13 +127,13 @@ config.key_tables = {
 config.adjust_window_size_when_changing_font_size = false
 config.window_decorations = "RESIZE"
 config.color_scheme = 'Afterglow'
-config.unix_domains = {
-  {
-    name = 'unix',
-  }
-}
+-- config.unix_domains = {
+--   {
+--     name = 'unix',
+--   }
+-- }
 config.window_close_confirmation = 'NeverPrompt'
-config.default_gui_startup_args = { 'connect', 'unix' }
+-- config.default_gui_startup_args = { 'connect', 'unix' }
 config.command_palette_font_size = 18.0
 config.quit_when_all_windows_are_closed = false
 
