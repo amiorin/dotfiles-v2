@@ -1,6 +1,15 @@
 # Video
 * My endgame 2023. https://www.youtube.com/watch?v=8qOSunEy3jU
 
+# Other apps
+
+``` sh
+brew install --cask spaceid
+brew install --cask keycastr
+brew install --cask raycast
+brew install --cask monitorcontrol
+```
+
 # Script
 * RSI and small keyboards
 * https://peppe.rs/posts/programming_on_34_keys/
