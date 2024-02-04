@@ -101,35 +101,21 @@ config.keys = {
     },
   },
   {
-    key = '[',
+    key = 'n',
     mods = 'CMD',
+    action = act.SendKey { key = 'n', mods = 'ALT' },
+  },
+  { key = '{', mods = 'SHIFT|SUPER',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'p', mods = '' },
     },
   },
-  {
-    key = ']',
-    mods = 'CMD',
+  { key = '}', mods = 'SHIFT|SUPER',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'n', mods = '' },
     },
-  },
-  {
-    key = 'n',
-    mods = 'CMD',
-    action = act.SendKey { key = 'n', mods = 'ALT' },
-  },
-  {
-    key = '[',
-    mods = 'CMD|SHIFT',
-    action = act.DisableDefaultAssignment,
-  },
-  {
-    key = ']',
-    mods = 'CMD|SHIFT',
-    action = act.DisableDefaultAssignment,
   },
   {
     key = 'm',

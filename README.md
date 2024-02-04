@@ -10,6 +10,9 @@ brew install --cask raycast
 brew install --cask monitorcontrol
 ```
 
+# WezTerm and Zellij prev and next tab
+https://github.com/wez/wezterm/issues/4251#issuecomment-1718239499
+
 # Accents
 https://apple.stackexchange.com/a/332770
 
