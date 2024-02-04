@@ -24,6 +24,41 @@ config.font_size = 20
 config.keys = {
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
   -- be potentially recognized and handled by the tab
+  { key = '1', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 't', mods = 'CTRL' },
+      act.SendKey { key = '1', mods = '' },
+    },
+  },
+  { key = '2', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 't', mods = 'CTRL' },
+      act.SendKey { key = '2', mods = '' },
+    },
+  },
+  { key = '3', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 't', mods = 'CTRL' },
+      act.SendKey { key = '3', mods = '' },
+    },
+  },
+  { key = '4', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 't', mods = 'CTRL' },
+      act.SendKey { key = '4', mods = '' },
+    },
+  },
+  { key = '5', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 't', mods = 'CTRL' },
+      act.SendKey { key = '5', mods = '' },
+    },
+  },
+  { key = '6', mods = 'SUPER', action = act.ActivateTab(0) },
+  { key = '7', mods = 'SUPER', action = act.ActivateTab(1) },
+  { key = '8', mods = 'SUPER', action = act.ActivateTab(2) },
+  { key = '9', mods = 'SUPER', action = act.ActivateTab(3) },
+  { key = '0', mods = 'SUPER', action = act.ActivateTab(4) },
   {
     key = 'i',
     mods = 'CMD',
@@ -66,9 +101,35 @@ config.keys = {
     },
   },
   {
+    key = '[',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'p', mods = '' },
+    },
+  },
+  {
+    key = ']',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'n', mods = '' },
+    },
+  },
+  {
     key = 'n',
     mods = 'CMD',
     action = act.SendKey { key = 'n', mods = 'ALT' },
+  },
+  {
+    key = '[',
+    mods = 'CMD|SHIFT',
+    action = act.DisableDefaultAssignment,
+  },
+  {
+    key = ']',
+    mods = 'CMD|SHIFT',
+    action = act.DisableDefaultAssignment,
   },
   {
     key = 'm',
@@ -120,13 +181,13 @@ config.keys = {
     action = act.ShowLauncher,
   },
   {
-    key = '[',
-    mods = 'CMD',
+    key = 'i',
+    mods = 'CMD|CTRL',
     action = act.SwitchWorkspaceRelative(1)
   },
   {
-    key = ']',
-    mods = 'CMD',
+    key = 'o',
+    mods = 'CMD|CTRL',
     action = act.SwitchWorkspaceRelative(-1)
   },
   {
