@@ -36,3 +36,6 @@ cmd + shift + alt - b : happy-yabai cmds swap-or-prev 10
 
 # cycle layout bsp and stack
 cmd + alt - u : happy-yabai cmds cycle-layout
+
+# fix macos hide window
+cmd - h : skhd -k "alt - h"

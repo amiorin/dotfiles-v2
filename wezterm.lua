@@ -25,9 +25,14 @@ config.keys = {
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
   -- be potentially recognized and handled by the tab
   {
-    key = 'h',
+    key = 'i',
     mods = 'CMD',
-    action = act.SendKey { key = 'h', mods = 'ALT' },
+    action = act.SendKey { key = '[', mods = 'ALT' },
+  },
+  {
+    key = 'o',
+    mods = 'CMD',
+    action = act.SendKey { key = ']', mods = 'ALT' },
   },
   {
     key = 'j',
