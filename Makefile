@@ -11,6 +11,7 @@ status:
 	cp ~/.config/wezterm/wezterm.lua wezterm.lua
 	cp ~/.config/neovide/config.toml config.toml
 	cp ~/.config/direnv/direnv.toml direnv.toml
+	cp ~/.config/zellij/config.kdl config.kdl
 
 install:
 	cp alacritty.yml ~/.alacritty.yml
@@ -35,5 +36,7 @@ install:
 	cp config.toml ~/.config/neovide/config.toml
 	mkdir -p ~/.config/direnv
 	cp direnv.toml ~/.config/direnv/direnv.toml
+	mkdir -p ~/.config/zellij
+	cp config.kdl ~/.config/zellij/config.kdl
 
 .PHONY: status install
