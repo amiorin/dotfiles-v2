@@ -26,23 +26,44 @@ config.keys = {
   -- be potentially recognized and handled by the tab
   {
     key = 'h',
-    mods = 'CTRL',
+    mods = 'CMD',
     action = act.SendKey { key = 'h', mods = 'ALT' },
   },
   {
     key = 'j',
-    mods = 'CTRL',
+    mods = 'CMD',
     action = act.SendKey { key = 'j', mods = 'ALT' },
   },
   {
     key = 'k',
-    mods = 'CTRL',
+    mods = 'CMD',
     action = act.SendKey { key = 'k', mods = 'ALT' },
   },
   {
     key = 'l',
-    mods = 'CTRL',
+    mods = 'CMD',
     action = act.SendKey { key = 'l', mods = 'ALT' },
+  },
+  {
+    key = 't',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.SendKey { key = 't', mods = 'CTRL' },
+      act.SendKey { key = 'n', mods = '' },
+    },
+  },
+  {
+    key = 'w',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.SendKey { key = 'p', mods = 'CTRL' },
+      act.SendKey { key = 'x', mods = '' },
+    },
+  },
+  {
+    key = 'n',
+    mods = 'CMD',
+    action = act.SendKey { key = 'n', mods = 'ALT' },
   },
   {
     key = 'm',
@@ -58,16 +79,18 @@ config.keys = {
   },
   {
     key = 'd',
-    mods = 'CTRL|CMD',
+    mods = 'CMD|CTRL',
     action = act.SplitPane {
       direction = 'Up'
     },
   },
   {
     key = 'w',
-    mods = 'CMD',
+    mods = 'CMD|CTRL',
     action = act.CloseCurrentPane { confirm = false },
   },
+  { key = 't', mods = 'CMD|CTRL', action = act.SpawnTab 'CurrentPaneDomain' },
+  { key = 'n', mods = 'CMD|CTRL', action = act.SpawnWindow },
   {
     key = 'q',
     mods = 'CMD',
@@ -75,7 +98,7 @@ config.keys = {
   },
   {
     key = 'k',
-    mods = 'CMD',
+    mods = 'CMD|CTRL',
     action = act.Multiple {
       act.ClearScrollback 'ScrollbackAndViewport',
       act.SendKey { key = 'L', mods = 'CTRL' },
