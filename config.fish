@@ -15,6 +15,7 @@ fish_add_path /Applications/neovide.app/Contents/MacOS
 # tmuxifier init - fish | source
 
 set -gx EDITOR "emacsclient -a '' -t"
+alias emacs=$EDITOR
 set -gx POETRY_VIRTUALENVS_IN_PROJECT true
 # https://www.packetmischief.ca/2016/09/06/ssh-agent-on-os-x/
 set -gx SSH_AUTH_SOCK (launchctl getenv SSH_AUTH_SOCK)
