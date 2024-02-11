@@ -51,6 +51,9 @@ function login_aws
         echo "Nothing selected"
         return 0
     end
+    set -gx SAML2AWS_IDP_PROVIDER JumpCloud
+    set -gx SAML2AWS_MFA Auto
+    set -gx SAML2AWS_PROFILE default
     if [ $account = multi-prod ]
         echo "Connecting to OneFootball Prod"
         set -gx SAML2AWS_URL https://sso.jumpcloud.com/saml2/awsproddataeng
