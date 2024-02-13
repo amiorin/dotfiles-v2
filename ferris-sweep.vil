@@ -54,7 +54,7 @@
       ],
       [
         "LT1(KC_SPACE)",
-        "TD(0)",
+        "LCTL_T(KC_ENTER)",
         -1,
         -1,
         -1
@@ -227,7 +227,7 @@
         "LSFT_T(KC_QUOTE)"
       ],
       [
-        "LT3(KC_SPACE)",
+        "LT5(KC_SPACE)",
         "TD(0)",
         -1,
         -1,
@@ -236,10 +236,17 @@
     ],
     [
       [
-        "KC_NO",
-        "KC_NO",
-        "KC_NO",
-        "KC_NO",
+        "KC_VOLD",
+        "KC_VOLU",
+        "KC_MUTE",
+        "KC_BRID",
+        "KC_BRIU"
+      ],
+      [
+        "KC_C",
+        "KC_LEFT",
+        "KC_MPLY",
+        "KC_RIGHT",
         "KC_NO"
       ],
       [
@@ -250,22 +257,15 @@
         "KC_NO"
       ],
       [
-        "KC_NO",
-        "KC_NO",
-        "KC_NO",
-        "KC_NO",
-        "KC_NO"
-      ],
-      [
-        "KC_NO",
+        "KC_F",
         "DF(0)",
         -1,
         -1,
         -1
       ],
       [
-        "KC_NO",
-        "KC_NO",
+        "KC_BRID",
+        "KC_BRIU",
         "KC_MUTE",
         "KC_VOLD",
         "KC_VOLU"

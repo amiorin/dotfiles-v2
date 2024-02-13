@@ -30,6 +30,7 @@ alias l="ls -la"
 alias rt="ls -l --sort newest"
 alias u="cd .."
 alias n="NVIM_APPNAME=nvim neovide"
+alias ze="zellij attach --create LOCAL"
 alias tldrf='tldr --list | fzf --preview "tldr {1}" --preview-window=right,60% | xargs tldr'
 
 function nvims
