@@ -1,3 +1,4 @@
+.PHONY: backup
 backup:
 	cp ~/.alacritty.yml alacritty.yml
 	cp ~/.tmux.conf tmux.conf
@@ -12,7 +13,9 @@ backup:
 	cp ~/.config/neovide/config.toml config.toml
 	cp ~/.config/direnv/direnv.toml direnv.toml
 	cp ~/.config/zellij/config.kdl config.kdl
+	cp ~/.config/starship.toml dotfiles/starship/starship.toml
 
+.PHONY: install
 install:
 	cp alacritty.yml ~/.alacritty.yml
 	cp tmux.conf ~/.tmux.conf
@@ -38,5 +41,5 @@ install:
 	cp direnv.toml ~/.config/direnv/direnv.toml
 	mkdir -p ~/.config/zellij
 	cp config.kdl ~/.config/zellij/config.kdl
-
-.PHONY: status install
+	mkdir -p ~/.config
+	cp dotfiles/starship/starship.toml ~/.config/starship.toml
