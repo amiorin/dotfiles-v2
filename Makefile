@@ -13,6 +13,7 @@ backup:
 	cp ~/.config/neovide/config.toml config.toml
 	cp ~/.config/direnv/direnv.toml direnv.toml
 	cp ~/.config/zellij/config.kdl config.kdl
+	cp ~/.config/atuin/config.toml dotfiles/atuin/config.toml
 	cp ~/.config/starship.toml dotfiles/starship/starship.toml
 
 .PHONY: install
@@ -41,5 +42,7 @@ install:
 	cp direnv.toml ~/.config/direnv/direnv.toml
 	mkdir -p ~/.config/zellij
 	cp config.kdl ~/.config/zellij/config.kdl
+	mkdir -p ~/.config/atuin
+	cp dotfiles/atuin/config.toml ~/.config/atuin/config.toml
 	mkdir -p ~/.config
 	cp dotfiles/starship/starship.toml ~/.config/starship.toml
