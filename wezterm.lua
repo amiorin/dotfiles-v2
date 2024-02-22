@@ -20,7 +20,7 @@ end
 -- Spawn a fish shell in login mode
 config.default_prog = { '/opt/homebrew/bin/fish', '-l' }
 config.font = wezterm.font 'JetBrains Mono'
-config.font_size = 20
+config.font_size = 19
 config.keys = {
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
   -- be potentially recognized and handled by the tab
@@ -202,13 +202,7 @@ config.key_tables = {
 config.adjust_window_size_when_changing_font_size = false
 config.window_decorations = "RESIZE"
 config.color_scheme = 'Afterglow'
--- config.unix_domains = {
---   {
---     name = 'unix',
---   }
--- }
 config.window_close_confirmation = 'NeverPrompt'
--- config.default_gui_startup_args = { 'connect', 'unix' }
 config.command_palette_font_size = 18.0
 config.quit_when_all_windows_are_closed = false
 
