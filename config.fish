@@ -24,6 +24,15 @@ set -gx POETRY_VIRTUALENVS_IN_PROJECT true
 set -gx SSH_AUTH_SOCK (launchctl getenv SSH_AUTH_SOCK)
 set -g fish_greeting
 
+# cursor style like vim
+set fish_vi_force_cursor
+set fish_cursor_default block
+set fish_cursor_insert line
+set fish_cursor_replace_one underscore
+set fish_cursor_replace underscore
+set fish_cursor_external line
+set fish_cursor_visual block
+
 # https://the.exa.website/
 alias ls=eza
 alias ll="ls -lh"
