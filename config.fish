@@ -55,6 +55,21 @@ function nvims
     env NVIM_APPNAME=$config nvim $argv
 end
 
+function e
+    set items doom sql
+    set config (printf "%s\n" $items | fzf --prompt="Emacs Config » " --height=~50% --layout=reverse --border --exit-0)
+    if [ -z $config ]
+        echo "Nothing selected"
+        return 0
+    else if [ $config = doom ]
+        eval $EDITOR
+        return 0
+    else if [ $config = sql ]
+        set config "$HOME/.emacs.sql"
+    end
+    /opt/homebrew/bin/emacs --init-directory $config
+end
+
 function login_aws
     set items single-stg single-prod multi-stg multi-prod
     set account (printf "%s\n" $items | fzf --prompt=" OneFootball AWS account » " --height=~50% --layout=reverse --border --exit-0)

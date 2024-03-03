@@ -22,8 +22,6 @@ config.default_prog = { '/opt/homebrew/bin/fish', '-l' }
 config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 18
 config.keys = {
-  -- Turn off the default CMD-m Hide action, allowing CMD-m to
-  -- be potentially recognized and handled by the tab
   { key = '1', mods = 'SUPER',
     action = act.Multiple {
       act.SendKey { key = 't', mods = 'CTRL' },
@@ -117,6 +115,8 @@ config.keys = {
       act.SendKey { key = 'n', mods = '' },
     },
   },
+  -- Turn off the default CMD-m Hide action, allowing CMD-m to
+  -- be potentially recognized and handled by the tab
   {
     key = 'm',
     mods = 'CMD',
