@@ -55,17 +55,28 @@ function nvims
     env NVIM_APPNAME=$config nvim $argv
 end
 
+# test sqls from scratch
+alias emacs-sql="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.sql"
+# test sqls
+alias emacs-space="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.space"
+# test fuzzy search
+alias emacs-doom-dev="env DOOMDIR=$HOME/.doom-dev /opt/homebrew/bin/emacs --init-directory $HOME/.emacs.doom-dev"
 function e
-    set items doom sql
-    set config (printf "%s\n" $items | fzf --prompt="Emacs Config » " --height=~50% --layout=reverse --border --exit-0)
+    set items doom doom-dev space sql
+    set config (printf "%s\n" $items | fzf --prompt=" » " --height=~50% --layout=reverse --border --exit-0)
     if [ -z $config ]
         echo "Nothing selected"
         return 0
     else if [ $config = doom ]
         eval $EDITOR
         return 0
+    else if [ $config = doom-dev ]
+         env DOOMDIR=$HOME/.doom-dev /opt/homebrew/bin/emacs --init-directory $HOME/.emacs.doom-dev
+         return 0
     else if [ $config = sql ]
         set config "$HOME/.emacs.sql"
+    else if [ $config = space ]
+        set config "$HOME/.emacs.space"
     end
     /opt/homebrew/bin/emacs --init-directory $config
 end
