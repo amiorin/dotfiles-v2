@@ -86,22 +86,41 @@ config.keys = {
     key = 't',
     mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 't', mods = 'CTRL' },
-      act.SendKey { key = 'n', mods = '' },
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'c', mods = '' },
     },
   },
   {
     key = 'w',
     mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'p', mods = 'CTRL' },
+      act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'x', mods = '' },
     },
   },
   {
     key = 'n',
     mods = 'CMD',
-    action = act.SendKey { key = 'n', mods = 'ALT' },
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = '%', mods = '' },
+    },
+  },
+  {
+    key = 'n',
+    mods = 'CMD|SHIFT',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = '"', mods = '' },
+    },
+  },
+  {
+    key = 's',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.SendKey { key = 'x', mods = 'CTRL' },
+      act.SendKey { key = 's', mods = 'CTRL' },
+    },
   },
   { key = '{', mods = 'SHIFT|SUPER',
     action = act.Multiple {
