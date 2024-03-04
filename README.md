@@ -14,6 +14,22 @@ brew install --cask wezterm
 # WezTerm and Zellij prev and next tab
 https://github.com/wez/wezterm/issues/4251#issuecomment-1718239499
 
+# Fix WezTerm and global shortcuts
+Some shortcuts has to be redefined in `System Settings` and not in the app.
+Chrome and Zellij use `shift-cmd-[`, therefore WezTerm has to use `cmd-[`.
+Minimizing app has to be remapped to something not used.
+
+```
+All Applications
+Show Help menu shift-cmd-/
+Minimise ctrl-shift-cmd-m
+Minimize ctrl-shift-cmd-m
+WezTerm
+Window->Select Tab->Activate the tab to the left  cmd-[
+Window->Select Tab->Activate the tab to the right cmd-]
+
+```
+
 # Accents
 https://apple.stackexchange.com/a/332770
 
