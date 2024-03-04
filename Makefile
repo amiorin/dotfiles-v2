@@ -13,6 +13,7 @@ backup:
 	cp ~/.config/neovide/config.toml config.toml
 	cp ~/.config/direnv/direnv.toml direnv.toml
 	cp ~/.config/zellij/config.kdl config.kdl
+	cp ~/.config/zellij/layouts/minimal.kdl dotfiles/zellij/layouts/minimal.kdl
 	cp ~/.config/atuin/config.toml dotfiles/atuin/config.toml
 	cp ~/.config/starship.toml dotfiles/starship/starship.toml
 
@@ -40,8 +41,9 @@ install:
 	cp config.toml ~/.config/neovide/config.toml
 	mkdir -p ~/.config/direnv
 	cp direnv.toml ~/.config/direnv/direnv.toml
-	mkdir -p ~/.config/zellij
+	mkdir -p ~/.config/zellij/layouts
 	cp config.kdl ~/.config/zellij/config.kdl
+	cp dotfiles/zellij/layouts/minimal.kdl ~/.config/zellij/layouts/minimal.kdl
 	mkdir -p ~/.config/atuin
 	cp dotfiles/atuin/config.toml ~/.config/atuin/config.toml
 	mkdir -p ~/.config
