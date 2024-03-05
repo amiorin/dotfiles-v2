@@ -38,4 +38,4 @@ cmd + shift + alt - b : happy-yabai cmds swap-or-prev 10
 cmd + alt - p : happy-yabai cmds cycle-layout
 
 # fix macos hide window
-cmd - h : skhd -k "alt - h"
+cmd - h : skhd -k "ctrl - b"; skhd -k "h"
