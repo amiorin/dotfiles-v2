@@ -99,6 +99,38 @@ config.keys = {
     },
   },
   {
+    key = 'h',
+    mods = 'CMD|CTRL',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'H', mods = '' },
+    },
+  },
+  {
+    key = 'j',
+    mods = 'CMD|CTRL',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'J', mods = '' },
+    },
+  },
+  {
+    key = 'k',
+    mods = 'CMD|CTRL',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'K', mods = '' },
+    },
+  },
+  {
+    key = 'l',
+    mods = 'CMD|CTRL',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'L', mods = '' },
+    },
+  },
+  {
     key = 't',
     mods = 'CMD',
     action = act.Multiple {
@@ -174,14 +206,6 @@ config.keys = {
     key = 'q',
     mods = 'CMD',
     action = act.QuitApplication,
-  },
-  {
-    key = 'k',
-    mods = 'CMD|CTRL',
-    action = act.Multiple {
-      act.ClearScrollback 'ScrollbackAndViewport',
-      act.SendKey { key = 'L', mods = 'CTRL' },
-    },
   },
   {
     key = 'p',

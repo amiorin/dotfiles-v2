@@ -11,6 +11,10 @@ keybinds clear-defaults=true {
         bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }
         bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }
         bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }
+        bind "H" { MovePane "Left"; SwitchToMode "Normal"; }
+        bind "J" { MovePane "Down"; SwitchToMode "Normal"; }
+        bind "K" { MovePane "Up"; SwitchToMode "Normal"; }
+        bind "L" { MovePane "Right"; SwitchToMode "Normal"; }
         bind "[" { PreviousSwapLayout; SwitchToMode "Normal"; }
         bind "]" { NextSwapLayout; SwitchToMode "Normal"; }
         // without cmd shortcut
