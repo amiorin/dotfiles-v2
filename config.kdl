@@ -17,6 +17,7 @@ keybinds clear-defaults=true {
         bind "L" { MovePane "Right"; SwitchToMode "Normal"; }
         bind "[" { PreviousSwapLayout; SwitchToMode "Normal"; }
         bind "]" { NextSwapLayout; SwitchToMode "Normal"; }
+        bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
         // without cmd shortcut
         bind "w" {
             LaunchOrFocusPlugin "zellij:session-manager" {
@@ -30,7 +31,6 @@ keybinds clear-defaults=true {
         bind "d" { Detach; }
         bind "q" { Quit; }
         bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }
-        bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
     }
     shared_except "normal" "locked" {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
