@@ -190,20 +190,6 @@ config.keys = {
     action = act.DisableDefaultAssignment,
   },
   {
-    key = 'd',
-    mods = 'CMD',
-    action = act.SplitPane {
-      direction = 'Right'
-    },
-  },
-  {
-    key = 'd',
-    mods = 'CMD|CTRL',
-    action = act.SplitPane {
-      direction = 'Down'
-    },
-  },
-  {
     key = 'w',
     mods = 'CMD|CTRL',
     action = act.CloseCurrentPane { confirm = false },
