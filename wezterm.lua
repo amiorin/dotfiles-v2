@@ -60,12 +60,18 @@ config.keys = {
   {
     key = 'i',
     mods = 'CMD',
-    action = act.SendKey { key = '[', mods = 'ALT' },
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = '[', mods = '' },
+    },
   },
   {
     key = 'o',
     mods = 'CMD',
-    action = act.SendKey { key = ']', mods = 'ALT' },
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = ']', mods = '' },
+    },
   },
   -- cmd + h is implememnted in skhd to override the hide of macos
   {
@@ -114,14 +120,6 @@ config.keys = {
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = '%', mods = '' },
-    },
-  },
-  {
-    key = 'n',
-    mods = 'CMD|SHIFT',
-    action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = '"', mods = '' },
     },
   },
   {
