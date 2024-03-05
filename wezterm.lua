@@ -58,6 +58,14 @@ config.keys = {
   { key = '9', mods = 'SUPER', action = act.ActivateTab(3) },
   { key = '0', mods = 'SUPER', action = act.ActivateTab(4) },
   {
+    key = 'z',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'z', mods = '' },
+    },
+  },
+  {
     key = 'i',
     mods = 'CMD',
     action = act.Multiple {
