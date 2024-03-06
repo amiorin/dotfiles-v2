@@ -61,8 +61,10 @@ alias emacs-sql="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.sql"
 alias emacs-space="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.space"
 # test fuzzy search
 alias emacs-doom-dev="env DOOMDIR=$HOME/.doom-dev /opt/homebrew/bin/emacs --init-directory $HOME/.emacs.doom-dev"
+# test prelude
+alias emacs-prelude="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.prelude"
 function e
-    set items doom doom-dev space sql
+    set items doom doom-dev space sql prelude
     set config (printf "%s\n" $items | fzf --prompt=" » " --height=~50% --layout=reverse --border --exit-0)
     if [ -z $config ]
         echo "Nothing selected"
@@ -77,6 +79,8 @@ function e
         set config "$HOME/.emacs.sql"
     else if [ $config = space ]
         set config "$HOME/.emacs.space"
+    else if [ $config = prelude ]
+        set config "$HOME/.emacs.prelude"
     end
     /opt/homebrew/bin/emacs --init-directory $config
 end

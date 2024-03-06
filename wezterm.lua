@@ -22,6 +22,9 @@ config.default_prog = { '/opt/homebrew/bin/fish', '-l' }
 config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 18
 config.keys = {
+  { key = 'x', mods = 'SUPER',
+    action = act.SendKey { key = 'x', mods = 'ALT' },
+  },
   { key = '1', mods = 'SUPER',
     action = act.Multiple {
       act.SendKey { key = 't', mods = 'CTRL' },
@@ -170,13 +173,19 @@ config.keys = {
       act.SendKey { key = 's', mods = 'CTRL' },
     },
   },
-  { key = '{', mods = 'SHIFT|SUPER',
+  { key = 'e', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'e', mods = '' },
+    },
+  },
+  { key = 'i', mods = 'SUPER',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'p', mods = '' },
     },
   },
-  { key = '}', mods = 'SHIFT|SUPER',
+  { key = 'o', mods = 'SUPER',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'n', mods = '' },
