@@ -113,3 +113,11 @@ function login_aws
         saml2aws login --force
     end
 end
+
+set emacs_exp '(with-current-buffer (window-buffer (selected-window)) (projectile-project-root))'
+set emacs_dir (emacsclient -a 'echo' --eval "$emacs_exp" 2> /dev/null)
+if test "$emacs_dir" != "nil"
+    if test "$emacs_dir" != "$emacs_exp"
+        cd (echo $emacs_dir | jq -r)
+    end
+end
