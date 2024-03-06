@@ -18,6 +18,7 @@ keybinds clear-defaults=true {
         bind "[" { PreviousSwapLayout; SwitchToMode "Normal"; }
         bind "]" { NextSwapLayout; SwitchToMode "Normal"; }
         bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }
+        bind "u" { Clear; SwitchToMode "Normal"; }
         // without cmd shortcut
         bind "w" {
             LaunchOrFocusPlugin "zellij:session-manager" {
