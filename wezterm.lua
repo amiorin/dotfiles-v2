@@ -22,8 +22,13 @@ config.default_prog = { '/opt/homebrew/bin/fish', '-l' }
 config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 18
 config.keys = {
-  { key = 'x', mods = 'SUPER',
+  {
+    key = 'x', mods = 'SUPER',
     action = act.SendKey { key = 'x', mods = 'ALT' },
+  },
+  {
+    key = 'x', mods = 'SUPER|CTRL',
+    action = act.SendKey { key = 'x', mods = 'ALT|CTRL' },
   },
   { key = '1', mods = 'SUPER',
     action = act.Multiple {
@@ -77,16 +82,16 @@ config.keys = {
     },
   },
   {
-    key = 'i',
-    mods = 'CMD',
+    key = '[',
+    mods = 'CMD|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = '[', mods = '' },
     },
   },
   {
-    key = 'o',
-    mods = 'CMD',
+    key = ']',
+    mods = 'CMD|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = ']', mods = '' },
@@ -187,13 +192,13 @@ config.keys = {
       act.SendKey { key = 'e', mods = '' },
     },
   },
-  { key = 'i', mods = 'SUPER',
+  { key = '{', mods = 'SUPER|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'p', mods = '' },
     },
   },
-  { key = 'o', mods = 'SUPER',
+  { key = '}', mods = 'SUPER|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'n', mods = '' },
@@ -231,12 +236,12 @@ config.keys = {
   {
     key = 'i',
     mods = 'CMD|CTRL',
-    action = act.SwitchWorkspaceRelative(1)
+    action = act.ActivateTabRelative(-1)
   },
   {
     key = 'o',
     mods = 'CMD|CTRL',
-    action = act.SwitchWorkspaceRelative(-1)
+    action = act.ActivateTabRelative(1)
   },
   {
     key = 'v',
