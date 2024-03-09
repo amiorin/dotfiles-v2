@@ -178,10 +178,17 @@
     ],
     [
       [
-        "KC_NO",
-        "KC_NO",
-        "KC_NO",
-        "KC_NO",
+        "KC_VOLD",
+        "KC_VOLU",
+        "KC_MUTE",
+        "KC_BRID",
+        "KC_BRIU"
+      ],
+      [
+        "KC_C",
+        "KC_LEFT",
+        "KC_MPLY",
+        "KC_RIGHT",
         "KC_NO"
       ],
       [
@@ -192,22 +199,15 @@
         "KC_NO"
       ],
       [
-        "KC_NO",
-        "KC_NO",
-        "KC_NO",
-        "KC_NO",
-        "KC_NO"
-      ],
-      [
-        "KC_TRNS",
+        "KC_F",
         "DF(0)",
         -1,
         -1,
         -1
       ],
       [
-        "KC_NO",
-        "KC_NO",
+        "KC_BRID",
+        "KC_BRIU",
         "KC_MUTE",
         "KC_VOLD",
         "KC_VOLU"
@@ -227,7 +227,7 @@
         "KC_NO"
       ],
       [
-        "KC_TRNS",
+        "KC_SPACE",
         "KC_F",
         -1,
         -1,
@@ -236,25 +236,25 @@
     ],
     [
       [
-        "LGUI(KC_1)",
-        "LGUI(KC_2)",
-        "LGUI(KC_3)",
-        "LGUI(KC_4)",
-        "LGUI(KC_5)"
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO"
       ],
       [
-        "LALT(KC_A)",
-        "LALT(KC_S)",
-        "LALT(KC_D)",
-        "LALT(KC_F)",
-        "LALT(KC_G)"
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO"
       ],
       [
-        "LALT(KC_Z)",
-        "KC_I",
-        "KC_O",
-        "LALT(KC_V)",
-        "LALT(KC_B)"
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO"
       ],
       [
         "KC_NO",
@@ -264,29 +264,29 @@
         -1
       ],
       [
-        "LCG(KC_Q)",
-        "KC_WH_U",
-        "KC_WH_D",
-        "KC_HOME",
-        "KC_END"
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO"
       ],
       [
-        "KC_LEFT",
-        "KC_DOWN",
-        "KC_UP",
-        "KC_RIGHT",
-        "KC_BSPACE"
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO"
       ],
       [
-        "0xc29",
-        "LGUI(KC_0)",
-        "LGUI(KC_MINUS)",
-        "LGUI(KC_EQUAL)",
-        "KC_LSHIFT"
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO",
+        "KC_NO"
       ],
       [
-        "DF(2)",
-        "KC_LCTRL",
+        "KC_NO",
+        "KC_NO",
         -1,
         -1,
         -1
@@ -331,11 +331,11 @@
       "KC_CAPSLOCK"
     ],
     [
+      "KC_S",
+      "KC_L",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
-      "KC_NO",
-      "KC_NO"
+      "DF(3)"
     ],
     [
       "KC_NO",
