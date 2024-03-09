@@ -474,31 +474,31 @@
       "options": 135
     },
     {
-      "trigger": "KC_NO",
-      "replacement": "KC_NO",
-      "layers": 65535,
-      "trigger_mods": 0,
-      "negative_mod_mask": 0,
-      "suppressed_mods": 0,
-      "options": 7
+      "trigger": "KC_COMMA",
+      "replacement": "LGUI(KC_0)",
+      "layers": 1,
+      "trigger_mods": 8,
+      "negative_mod_mask": 7,
+      "suppressed_mods": 8,
+      "options": 135
     },
     {
-      "trigger": "KC_NO",
-      "replacement": "KC_NO",
-      "layers": 65535,
-      "trigger_mods": 0,
-      "negative_mod_mask": 0,
-      "suppressed_mods": 0,
-      "options": 7
+      "trigger": "KC_DOT",
+      "replacement": "LGUI(KC_MINUS)",
+      "layers": 1,
+      "trigger_mods": 8,
+      "negative_mod_mask": 7,
+      "suppressed_mods": 8,
+      "options": 135
     },
     {
-      "trigger": "KC_NO",
-      "replacement": "KC_NO",
-      "layers": 65535,
-      "trigger_mods": 0,
-      "negative_mod_mask": 0,
-      "suppressed_mods": 0,
-      "options": 7
+      "trigger": "LSFT_T(KC_QUOTE)",
+      "replacement": "LGUI(KC_EQUAL)",
+      "layers": 1,
+      "trigger_mods": 8,
+      "negative_mod_mask": 7,
+      "suppressed_mods": 8,
+      "options": 135
     },
     {
       "trigger": "KC_NO",
