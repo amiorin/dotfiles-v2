@@ -63,6 +63,8 @@ alias emacs-space="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.space"
 alias emacs-doom-dev="env DOOMDIR=$HOME/.doom-dev /opt/homebrew/bin/emacs --init-directory $HOME/.emacs.doom-dev"
 # test prelude
 alias emacs-prelude="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.prelude"
+# test god
+alias emacs-god="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.god"
 function e
     set items doom doom-dev space sql prelude
     set config (printf "%s\n" $items | fzf --prompt=" » " --height=~50% --layout=reverse --border --exit-0)

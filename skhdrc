@@ -10,6 +10,17 @@ ctrl + alt - v : happy-yabai cmds move-or-next 8
 ctrl + alt - g : happy-yabai cmds move-or-next 9
 ctrl + alt - b : happy-yabai cmds move-or-next 10
 
+f1 : happy-yabai cmds move-or-next 1
+f2 : happy-yabai cmds move-or-next 2
+f3 : happy-yabai cmds move-or-next 3
+f4 : happy-yabai cmds move-or-next 4
+f5 : happy-yabai cmds move-or-next 5
+f6 : happy-yabai cmds move-or-next 6
+f7 : happy-yabai cmds move-or-next 7
+f8 : happy-yabai cmds move-or-next 8
+f9 : happy-yabai cmds move-or-next 9
+f10 : happy-yabai cmds move-or-next 10
+
 # move to desktop or cycle windows backward (bsp and stack) if already there
 ctrl + cmd + alt - a : happy-yabai cmds move-or-prev 1
 ctrl + cmd + alt - z : happy-yabai cmds move-or-prev 2
@@ -21,6 +32,17 @@ ctrl + cmd + alt - c : happy-yabai cmds move-or-prev 7
 ctrl + cmd + alt - v : happy-yabai cmds move-or-prev 8
 ctrl + cmd + alt - g : happy-yabai cmds move-or-prev 9
 ctrl + cmd + alt - b : happy-yabai cmds move-or-prev 10
+
+cmd - f1 : happy-yabai cmds move-or-prev 1
+cmd - f2 : happy-yabai cmds move-or-prev 2
+cmd - f3 : happy-yabai cmds move-or-prev 3
+cmd - f4 : happy-yabai cmds move-or-prev 4
+cmd - f5 : happy-yabai cmds move-or-prev 5
+cmd - f6 : happy-yabai cmds move-or-prev 6
+cmd - f7 : happy-yabai cmds move-or-prev 7
+cmd - f8 : happy-yabai cmds move-or-prev 8
+cmd - f9 : happy-yabai cmds move-or-prev 9
+cmd - f10: happy-yabai cmds move-or-prev 10
 
 # swap to desktop or cycle windows backward (bsp and stack) if already there
 ctrl + shift + alt - a : happy-yabai cmds swap-or-prev 1
@@ -35,7 +57,7 @@ ctrl + shift + alt - v : happy-yabai cmds swap-or-prev 9
 ctrl + shift + alt - b : happy-yabai cmds swap-or-prev 10
 
 # cycle layout bsp and stack
-ctrl + alt - 0x2F : happy-yabai cmds cycle-layout
+f12 : happy-yabai cmds cycle-layout
 
 # fix macos hide window
 cmd - h : skhd -k "ctrl - b"; skhd -k "h"
