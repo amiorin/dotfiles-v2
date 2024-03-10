@@ -1,0 +1,22 @@
+(defcfg
+  macos-dev-names-include (
+    "TMKB T68SE"
+  )
+  process-unmapped-keys yes
+)
+
+(defsrc
+lalt h   j    k    l
+)
+
+(deflayer base
+@nav h   j    k    l
+)
+
+(deflayer nav
+lmeta lft   down    up    rght
+)
+
+(defalias
+  nav (tap-hold-press 0 200 lmeta (layer-toggle nav))
+)
