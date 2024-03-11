@@ -11,16 +11,16 @@ f9 : happy-yabai cmds move-or-next 9
 f10 : happy-yabai cmds move-or-next 10
 
 # move to desktop or cycle windows backward (bsp and stack) if already there
-cmd - f1 : happy-yabai cmds move-or-prev 1
-cmd - f2 : happy-yabai cmds move-or-prev 2
-cmd - f3 : happy-yabai cmds move-or-prev 3
-cmd - f4 : happy-yabai cmds move-or-prev 4
-cmd - f5 : happy-yabai cmds move-or-prev 5
-cmd - f6 : happy-yabai cmds move-or-prev 6
-cmd - f7 : happy-yabai cmds move-or-prev 7
-cmd - f8 : happy-yabai cmds move-or-prev 8
-cmd - f9 : happy-yabai cmds move-or-prev 9
-cmd - f10: happy-yabai cmds move-or-prev 10
+alt - f1 : happy-yabai cmds move-or-prev 1
+alt - f2 : happy-yabai cmds move-or-prev 2
+alt - f3 : happy-yabai cmds move-or-prev 3
+alt - f4 : happy-yabai cmds move-or-prev 4
+alt - f5 : happy-yabai cmds move-or-prev 5
+alt - f6 : happy-yabai cmds move-or-prev 6
+alt - f7 : happy-yabai cmds move-or-prev 7
+alt - f8 : happy-yabai cmds move-or-prev 8
+alt - f9 : happy-yabai cmds move-or-prev 9
+alt - f10: happy-yabai cmds move-or-prev 10
 
 # swap to desktop or cycle windows backward (bsp and stack) if already there
 shift - f1  : happy-yabai cmds swap-or-prev 1

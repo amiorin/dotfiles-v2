@@ -82,16 +82,16 @@ config.keys = {
     },
   },
   {
-    key = '[',
-    mods = 'CMD|SHIFT',
+    key = 'PageUp',
+    mods = 'CTRL|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = '[', mods = '' },
     },
   },
   {
-    key = ']',
-    mods = 'CMD|SHIFT',
+    key = 'PageDown',
+    mods = 'CTRL|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = ']', mods = '' },

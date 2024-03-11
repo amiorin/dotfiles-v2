@@ -1,0 +1,20 @@
+(defcfg
+  macos-dev-names-include (
+    "TMKB\ T68SE"
+  )
+  process-unmapped-keys yes
+)
+
+(defsrc
+rsft / . , m      v c x z lsft
+' ; l k j         f d s a caps
+[ p o i u         r e w q tab
+9                 4
+)
+
+(deflayer base
+q w e r t         y u i o p
+a s d f g         h j k l bspc
+z x c v b         n m , . '
+lmeta             spc
+)

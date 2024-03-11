@@ -112,7 +112,7 @@
       ],
       [
         "LT2(KC_SPACE)",
-        "KC_LGUI",
+        "KC_LALT",
         -1,
         -1,
         -1
@@ -121,7 +121,7 @@
     [
       [
         "LSFT(KC_EQUAL)",
-        "LSFT(KC_GRAVE)",
+        "LSFT(KC_6)",
         "LSFT(KC_LBRACKET)",
         "LSFT(KC_RBRACKET)",
         "LSFT(KC_5)"
@@ -149,16 +149,16 @@
       ],
       [
         "LSFT(KC_7)",
-        "LSFT(KC_2)",
         "LSFT(KC_COMMA)",
         "LSFT(KC_DOT)",
+        "LSFT(KC_4)",
         "LSFT(KC_BSLASH)"
       ],
       [
         "LSFT(KC_SLASH)",
         "LSFT(KC_SCOLON)",
-        "LSFT(KC_6)",
-        "LSFT(KC_4)",
+        "LSFT(KC_2)",
+        "LSFT(KC_GRAVE)",
         "KC_BSPACE"
       ],
       [
@@ -1015,22 +1015,22 @@
       "options": 135
     },
     {
-      "trigger": "KC_NO",
-      "replacement": "KC_NO",
-      "layers": 65535,
-      "trigger_mods": 0,
-      "negative_mod_mask": 0,
-      "suppressed_mods": 0,
-      "options": 7
+      "trigger": "KC_COMMA",
+      "replacement": "C_S(KC_PGUP)",
+      "layers": 1,
+      "trigger_mods": 8,
+      "negative_mod_mask": 7,
+      "suppressed_mods": 8,
+      "options": 135
     },
     {
-      "trigger": "KC_NO",
-      "replacement": "KC_NO",
-      "layers": 65535,
-      "trigger_mods": 0,
-      "negative_mod_mask": 0,
-      "suppressed_mods": 0,
-      "options": 7
+      "trigger": "KC_DOT",
+      "replacement": "C_S(KC_PGDOWN)",
+      "layers": 1,
+      "trigger_mods": 8,
+      "negative_mod_mask": 7,
+      "suppressed_mods": 8,
+      "options": 135
     },
     {
       "trigger": "KC_NO",
