@@ -14,6 +14,14 @@ if wezterm.config_builder then
 end
 
 -- This is where you actually apply your config choices
+config.window_padding = {
+  left = 0,
+  right = 0,
+  top = 0,
+  bottom = 0,
+}
+
+config.hide_tab_bar_if_only_one_tab = true
 
 -- For example, changing the color scheme:
 --config.color_scheme = 'Batman'
@@ -29,6 +37,12 @@ config.keys = {
   {
     key = 'x', mods = 'SUPER|CTRL',
     action = act.SendKey { key = 'x', mods = 'ALT|CTRL' },
+  },
+  { key = 'f', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'f', mods = '' },
+    },
   },
   { key = '1', mods = 'SUPER',
     action = act.Multiple {
@@ -60,6 +74,8 @@ config.keys = {
       act.SendKey { key = '5', mods = '' },
     },
   },
+  { key = 'Enter', mods = 'SUPER', action = act.ToggleFullScreen },
+  { key = '6', mods = 'SUPER', action = act.ActivateTab(0) },
   { key = '6', mods = 'SUPER', action = act.ActivateTab(0) },
   { key = '7', mods = 'SUPER', action = act.ActivateTab(1) },
   { key = '8', mods = 'SUPER', action = act.ActivateTab(2) },

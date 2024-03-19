@@ -24,6 +24,7 @@ keybinds clear-defaults=true {
         bind "3" { GoToTab 3; SwitchToMode "Normal"; }
         bind "4" { GoToTab 4; SwitchToMode "Normal"; }
         bind "5" { GoToTab 5; SwitchToMode "Normal"; }
+        bind "f" { TogglePaneFrames; SwitchToMode "Normal"; }
         // without cmd shortcut
         bind "w" {
             LaunchOrFocusPlugin "zellij:session-manager" {
