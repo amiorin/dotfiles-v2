@@ -76,10 +76,10 @@
         "KC_F9"
       ],
       [
-        "LCTL_T(KC_1)",
-        "LALT_T(KC_2)",
-        "LSFT_T(KC_3)",
-        "LGUI_T(KC_4)",
+        "LSFT_T(KC_1)",
+        "LGUI_T(KC_2)",
+        "LCTL_T(KC_3)",
+        "LALT_T(KC_4)",
         "KC_5"
       ],
       [
@@ -105,10 +105,10 @@
       ],
       [
         "KC_6",
-        "LGUI_T(KC_7)",
-        "LSFT_T(KC_8)",
-        "LALT_T(KC_9)",
-        "LCTL_T(KC_0)"
+        "LALT_T(KC_7)",
+        "LCTL_T(KC_8)",
+        "LGUI_T(KC_9)",
+        "LSFT_T(KC_0)"
       ],
       [
         "KC_TRNS",
@@ -134,10 +134,10 @@
         "LSFT(KC_1)"
       ],
       [
-        "LCTL_T(KC_MINUS)",
-        "LALT_T(KC_EQUAL)",
-        "LSFT_T(KC_LBRACKET)",
-        "LGUI_T(KC_RBRACKET)",
+        "LSFT_T(KC_MINUS)",
+        "LGUI_T(KC_EQUAL)",
+        "LCTL_T(KC_LBRACKET)",
+        "LALT_T(KC_RBRACKET)",
         "LSFT(KC_3)"
       ],
       [
@@ -163,10 +163,10 @@
       ],
       [
         "LSFT(KC_8)",
-        "LGUI_T(KC_SCOLON)",
-        "LSFT_T(KC_GRAVE)",
-        "LALT_T(KC_BSLASH)",
-        "LCTL_T(KC_SLASH)"
+        "LALT_T(KC_SCOLON)",
+        "LCTL_T(KC_GRAVE)",
+        "LGUI_T(KC_BSLASH)",
+        "LSFT_T(KC_SLASH)"
       ],
       [
         "KC_TRNS",
