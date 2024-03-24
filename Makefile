@@ -16,6 +16,7 @@ backup:
 	cp ~/.config/zellij/layouts/minimal.kdl dotfiles/zellij/layouts/minimal.kdl
 	cp ~/.config/atuin/config.toml dotfiles/atuin/config.toml
 	cp ~/.config/starship.toml dotfiles/starship/starship.toml
+	cp ~/.local/bin/happy-emacs dotfiles/bin/happy-emacs
 
 .PHONY: install
 install:
@@ -31,6 +32,7 @@ install:
 	cp fixterm ~/.local/fixterm
 	mkdir -p ~/.local/bin
 	cp 24-bit-color.sh ~/.local/bin/24-bit-color.sh
+	cp dotfiles/bin/happy-emacs ~/.local/bin/happy-emacs
 	mkdir -p ~/.local/bin
 	cp sessions.sh ~/.local/bin/sessions.sh
 	mkdir -p ~/.tmux/plugins/tmuxifier/layouts
