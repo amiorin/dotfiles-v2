@@ -211,7 +211,6 @@ config.keys = {
     key = 's',
     mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'g', mods = 'CTRL' },
       act.SendKey { key = 'x', mods = 'CTRL' },
       act.SendKey { key = 's', mods = 'CTRL' },
     },
