@@ -31,12 +31,25 @@ config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 18
 config.keys = {
   {
-    key = 'x', mods = 'SUPER',
-    action = act.SendKey { key = 'x', mods = 'ALT' },
+    key = 'b', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'b', mods = '' },
+    },
   },
   {
-    key = 'x', mods = 'SUPER|CTRL',
-    action = act.SendKey { key = 'x', mods = 'ALT|CTRL' },
+    key = 'x', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'x', mods = '' },
+    },
+  },
+  {
+    key = 'c', mods = 'SUPER',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'c', mods = '' },
+    },
   },
   { key = 'f', mods = 'SUPER',
     action = act.Multiple {
@@ -175,7 +188,7 @@ config.keys = {
     mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'c', mods = '' },
+      act.SendKey { key = 't', mods = '' },
     },
   },
   {
@@ -183,7 +196,7 @@ config.keys = {
     mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'x', mods = '' },
+      act.SendKey { key = 'w', mods = '' },
     },
   },
   {
@@ -191,7 +204,7 @@ config.keys = {
     mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = '%', mods = '' },
+      act.SendKey { key = 'n', mods = '' },
     },
   },
   {
@@ -211,13 +224,13 @@ config.keys = {
   { key = '{', mods = 'SUPER|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'p', mods = '' },
+      act.SendKey { key = 'i', mods = '' },
     },
   },
   { key = '}', mods = 'SUPER|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'n', mods = '' },
+      act.SendKey { key = 'o', mods = '' },
     },
   },
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
