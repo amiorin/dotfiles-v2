@@ -115,7 +115,7 @@ config.keys = {
     mods = 'CTRL|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = '[', mods = '' },
+      act.SendKey { key = ',', mods = '' },
     },
   },
   {
@@ -123,7 +123,7 @@ config.keys = {
     mods = 'CTRL|SHIFT',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = ']', mods = '' },
+      act.SendKey { key = '.', mods = '' },
     },
   },
   -- cmd + h is implememnted in skhd to override the hide of macos
