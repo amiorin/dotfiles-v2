@@ -22,7 +22,7 @@ ctrl - f8 : happy-yabai cmds move-or-prev 8
 ctrl - f9 : happy-yabai cmds move-or-prev 9
 ctrl - f10: happy-yabai cmds move-or-prev 10
 
-# swap the two displays if more than one
+# swap the focused win between two displays if more than one
 f11 : happy-yabai cmds swap
 
 # cycle layout bsp and stack
