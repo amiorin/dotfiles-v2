@@ -57,3 +57,4 @@ plugins {
 }
 
 default_layout "minimal"
+session_serialization false

@@ -28,5 +28,8 @@ f11 : happy-yabai cmds swap
 # cycle layout bsp and stack
 f12 : happy-yabai cmds cycle-layout
 
+# restart yabai when needed
+f15 : echo Restarting...; yabai --restart-service; echo Done
+
 # fix macos hide window
 cmd - h : skhd -k "ctrl - b"; skhd -k "h"
