@@ -227,8 +227,8 @@
         "KC_NO"
       ],
       [
-        "KC_DOWN",
-        "KC_UP",
+        "DF(0)",
+        "KC_F",
         -1,
         -1,
         -1
@@ -733,25 +733,25 @@
       "0x7c73"
     ],
     [
-      "KC_S",
+      "KC_J",
+      "KC_K",
       "KC_L",
-      "KC_NO",
       "KC_NO",
       "DF(3)"
     ],
     [
-      "KC_D",
-      "KC_K",
+      "KC_LEFT",
+      "KC_MPLY",
+      "KC_RIGHT",
       "KC_NO",
-      "KC_NO",
-      "KC_NO"
+      "DF(3)"
     ],
     [
+      "LGUI_T(KC_TAB)",
+      "LCTL_T(KC_ENTER)",
       "KC_NO",
       "KC_NO",
-      "KC_NO",
-      "KC_NO",
-      "KC_NO"
+      "OSM(MOD_LALT)"
     ],
     [
       "KC_NO",
