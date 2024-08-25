@@ -32,4 +32,4 @@ f12 : happy-yabai cmds cycle-layout
 f15 : echo Restarting...; yabai --restart-service; echo Done
 
 # fix macos hide window
-cmd - h : skhd -k "ctrl - b"; skhd -k "h"
+cmd - h : skhd -k "ctrl - w"; skhd -k "h"

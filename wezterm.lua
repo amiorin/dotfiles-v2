@@ -131,15 +131,15 @@ config.keys = {
     key = 'j',
     mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'w', mods = 'CTRL' },
       act.SendKey { key = 'j', mods = '' },
     },
   },
   {
     key = 'k',
     mods = 'CMD',
-    action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+    action = act.Multiple   {
+      act.SendKey { key = 'w', mods = 'CTRL' },
       act.SendKey { key = 'k', mods = '' },
     },
   },
@@ -147,8 +147,32 @@ config.keys = {
     key = 'l',
     mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'w', mods = 'CTRL' },
       act.SendKey { key = 'l', mods = '' },
+    },
+  },
+  {
+    key = 'n',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.SendKey { key = 'w', mods = 'CTRL' },
+      act.SendKey { key = 'v', mods = '' },
+    },
+  },
+  {
+    key = 'd',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.SendKey { key = 'w', mods = 'CTRL' },
+      act.SendKey { key = 'd', mods = '' },
+    },
+  },
+  {
+    key = 'w',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.SendKey { key = 'w', mods = 'CTRL' },
+      act.SendKey { key = 'o', mods = 'CTRL' },
     },
   },
   {
@@ -156,7 +180,7 @@ config.keys = {
     mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'H', mods = '' },
+      act.SendKey { key = 'h', mods = '' },
     },
   },
   {
@@ -164,7 +188,7 @@ config.keys = {
     mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'J', mods = '' },
+      act.SendKey { key = 'j', mods = '' },
     },
   },
   {
@@ -172,7 +196,7 @@ config.keys = {
     mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'K', mods = '' },
+      act.SendKey { key = 'k', mods = '' },
     },
   },
   {
@@ -180,7 +204,7 @@ config.keys = {
     mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'L', mods = '' },
+      act.SendKey { key = 'l', mods = '' },
     },
   },
   {
@@ -193,20 +217,20 @@ config.keys = {
   },
   {
     key = 'w',
-    mods = 'CMD',
+    mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'w', mods = '' },
     },
   },
-  {
-    key = 'n',
-    mods = 'CMD',
-    action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'n', mods = '' },
-    },
-  },
+  -- {
+  --   key = 'n',
+  --   mods = 'CMD',
+  --   action = act.Multiple {
+  --     act.SendKey { key = 'b', mods = 'CTRL' },
+  --     act.SendKey { key = 'n', mods = '' },
+  --   },
+  -- },
   {
     key = 's',
     mods = 'CMD',
@@ -242,7 +266,7 @@ config.keys = {
   },
   {
     key = 'w',
-    mods = 'CMD|CTRL',
+    mods = 'CMD|CTRL|SHIFT',
     action = act.CloseCurrentPane { confirm = false },
   },
   { key = 't', mods = 'CMD|CTRL', action = act.SpawnTab 'CurrentPaneDomain' },
