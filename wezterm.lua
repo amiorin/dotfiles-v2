@@ -147,7 +147,7 @@ config.keys = {
   { key = 'n', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'w', mods = 'CTRL' },
-      act.SendKey { key = 'v', mods = '' },
+      act.SendKey { key = 'V', mods = '' },
     },
   },
   {
@@ -161,7 +161,7 @@ config.keys = {
     key = 'w', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'w', mods = 'CTRL' },
-      act.SendKey { key = 'd', mods = 'CTRL' },
+      act.SendKey { key = 'd', mods = '' },
     },
   },
   {
@@ -172,56 +172,49 @@ config.keys = {
     },
   },
   {
-    key = 'j',
-    mods = 'CMD|CTRL',
+    key = 'j', mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'j', mods = '' },
     },
   },
   {
-    key = 'k',
-    mods = 'CMD|CTRL',
+    key = 'k', mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'k', mods = '' },
     },
   },
   {
-    key = 'l',
-    mods = 'CMD|CTRL',
+    key = 'l', mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'l', mods = '' },
     },
   },
   {
-    key = 't',
-    mods = 'CMD',
+    key = 't', mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 't', mods = '' },
     },
   },
   {
-    key = 'w',
-    mods = 'CMD|CTRL',
+    key = 'w', mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'w', mods = '' },
     },
   },
-  -- {
-  --   key = 'n',
-  --   mods = 'CMD',
-  --   action = act.Multiple {
-  --     act.SendKey { key = 'b', mods = 'CTRL' },
-  --     act.SendKey { key = 'n', mods = '' },
-  --   },
-  -- },
   {
-    key = 's',
-    mods = 'CMD',
+    key = 'n', mods = 'CMD|CTRL',
+    action = act.Multiple {
+      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'n', mods = '' },
+    },
+  },
+  {
+    key = 's', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'x', mods = 'CTRL' },
       act.SendKey { key = 's', mods = 'CTRL' },
