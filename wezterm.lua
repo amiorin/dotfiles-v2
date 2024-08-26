@@ -241,6 +241,7 @@ config.keys = {
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
   -- be potentially recognized and handled by the tab
   { key = 'm', mods = 'CMD', action = act.DisableDefaultAssignment },
+  { key = 't', mods = 'CMD', action = act.DisableDefaultAssignment },
   { key = 'w', mods = 'CMD|CTRL|SHIFT', action = act.CloseCurrentPane { confirm = false },},
   { key = 't', mods = 'CMD|CTRL|SHIFT', action = act.SpawnTab 'CurrentPaneDomain' },
   { key = 'n', mods = 'CMD|CTRL|SHIFT', action = act.SpawnWindow },
