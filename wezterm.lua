@@ -31,67 +31,67 @@ config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 18
 config.keys = {
   {
-    key = 'b', mods = 'SUPER',
+    key = 'b', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'b', mods = '' },
     },
   },
   {
-    key = 'x', mods = 'SUPER',
+    key = 'x', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'x', mods = '' },
     },
   },
   {
-    key = 'c', mods = 'SUPER',
+    key = 'c', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'c', mods = '' },
     },
   },
-  { key = 'f', mods = 'SUPER',
+  { key = 'f', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'f', mods = '' },
     },
   },
-  { key = '1', mods = 'SUPER',
+  { key = '1', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = '1', mods = '' },
     },
   },
-  { key = '2', mods = 'SUPER',
+  { key = '2', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = '2', mods = '' },
     },
   },
-  { key = '3', mods = 'SUPER',
+  { key = '3', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = '3', mods = '' },
     },
   },
-  { key = '4', mods = 'SUPER',
+  { key = '4', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = '4', mods = '' },
     },
   },
-  { key = '5', mods = 'SUPER',
+  { key = '5', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = '5', mods = '' },
     },
   },
-  { key = '6', mods = 'SUPER', action = act.ActivateTab(0) },
-  { key = '7', mods = 'SUPER', action = act.ActivateTab(1) },
-  { key = '8', mods = 'SUPER', action = act.ActivateTab(2) },
-  { key = '9', mods = 'SUPER', action = act.ActivateTab(3) },
-  { key = '0', mods = 'SUPER', action = act.ActivateTab(4) },
+  { key = '6', mods = 'CMD', action = act.ActivateTab(0) },
+  { key = '7', mods = 'CMD', action = act.ActivateTab(1) },
+  { key = '8', mods = 'CMD', action = act.ActivateTab(2) },
+  { key = '9', mods = 'CMD', action = act.ActivateTab(3) },
+  { key = '0', mods = 'CMD', action = act.ActivateTab(4) },
   {
     key = 'u', mods = 'CMD',
     action = act.Multiple {
@@ -220,7 +220,7 @@ config.keys = {
       act.SendKey { key = 's', mods = 'CTRL' },
     },
   },
-  { key = 'e', mods = 'SUPER',
+  { key = 'e', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'e', mods = '' },
@@ -238,13 +238,13 @@ config.keys = {
       act.SendKey { key = 'o', mods = '' },
     },
   },
-  -- { key = '{', mods = 'SUPER|SHIFT',
+  -- { key = '{', mods = 'CMD|SHIFT',
   --   action = act.Multiple {
   --     act.SendKey { key = 'b', mods = 'CTRL' },
   --     act.SendKey { key = 'i', mods = '' },
   --   },
   -- },
-  -- { key = '}', mods = 'SUPER|SHIFT',
+  -- { key = '}', mods = 'CMD|SHIFT',
   --   action = act.Multiple {
   --     act.SendKey { key = 'b', mods = 'CTRL' },
   --     act.SendKey { key = 'o', mods = '' },
@@ -254,8 +254,8 @@ config.keys = {
   -- be potentially recognized and handled by the tab
   { key = 'm', mods = 'CMD', action = act.DisableDefaultAssignment },
   { key = 't', mods = 'CMD', action = act.DisableDefaultAssignment },
-  { key = '{', mods = 'SUPER|SHIFT', action = act.DisableDefaultAssignment },
-  { key = '}', mods = 'SUPER|SHIFT', action = act.DisableDefaultAssignment },
+  { key = '{', mods = 'CMD|SHIFT', action = act.DisableDefaultAssignment },
+  { key = '}', mods = 'CMD|SHIFT', action = act.DisableDefaultAssignment },
   { key = 'w', mods = 'CMD|CTRL|SHIFT', action = act.CloseCurrentPane { confirm = false },},
   { key = 't', mods = 'CMD|CTRL|SHIFT', action = act.SpawnTab 'CurrentPaneDomain' },
   { key = 'n', mods = 'CMD|CTRL|SHIFT', action = act.SpawnWindow },
