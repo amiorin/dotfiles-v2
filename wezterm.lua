@@ -87,24 +87,20 @@ config.keys = {
       act.SendKey { key = '5', mods = '' },
     },
   },
-  { key = 'Enter', mods = 'SUPER', action = act.ToggleFullScreen },
-  { key = '6', mods = 'SUPER', action = act.ActivateTab(0) },
   { key = '6', mods = 'SUPER', action = act.ActivateTab(0) },
   { key = '7', mods = 'SUPER', action = act.ActivateTab(1) },
   { key = '8', mods = 'SUPER', action = act.ActivateTab(2) },
   { key = '9', mods = 'SUPER', action = act.ActivateTab(3) },
   { key = '0', mods = 'SUPER', action = act.ActivateTab(4) },
   {
-    key = 'u',
-    mods = 'CMD',
+    key = 'u', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'u', mods = '' },
     },
   },
   {
-    key = 'z',
-    mods = 'CMD',
+    key = 'z', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'z', mods = '' },
@@ -128,56 +124,48 @@ config.keys = {
   },
   -- cmd + h is implememnted in skhd to override the hide of macos
   {
-    key = 'j',
-    mods = 'CMD',
+    key = 'j', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'w', mods = 'CTRL' },
       act.SendKey { key = 'j', mods = '' },
     },
   },
   {
-    key = 'k',
-    mods = 'CMD',
+    key = 'k', mods = 'CMD',
     action = act.Multiple   {
       act.SendKey { key = 'w', mods = 'CTRL' },
       act.SendKey { key = 'k', mods = '' },
     },
   },
   {
-    key = 'l',
-    mods = 'CMD',
+    key = 'l', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'w', mods = 'CTRL' },
       act.SendKey { key = 'l', mods = '' },
     },
   },
-  {
-    key = 'n',
-    mods = 'CMD',
+  { key = 'n', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'w', mods = 'CTRL' },
       act.SendKey { key = 'v', mods = '' },
     },
   },
   {
-    key = 'd',
-    mods = 'CMD',
+    key = 'd', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'w', mods = 'CTRL' },
       act.SendKey { key = 'd', mods = '' },
     },
   },
   {
-    key = 'w',
-    mods = 'CMD',
+    key = 'w', mods = 'CMD',
     action = act.Multiple {
       act.SendKey { key = 'w', mods = 'CTRL' },
-      act.SendKey { key = 'o', mods = 'CTRL' },
+      act.SendKey { key = 'd', mods = 'CTRL' },
     },
   },
   {
-    key = 'h',
-    mods = 'CMD|CTRL',
+    key = 'h', mods = 'CMD|CTRL',
     action = act.Multiple {
       act.SendKey { key = 'b', mods = 'CTRL' },
       act.SendKey { key = 'h', mods = '' },
@@ -259,55 +247,17 @@ config.keys = {
   },
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
   -- be potentially recognized and handled by the tab
-  {
-    key = 'm',
-    mods = 'CMD',
-    action = act.DisableDefaultAssignment,
-  },
-  {
-    key = 'w',
-    mods = 'CMD|CTRL|SHIFT',
-    action = act.CloseCurrentPane { confirm = false },
-  },
-  { key = 't', mods = 'CMD|CTRL', action = act.SpawnTab 'CurrentPaneDomain' },
-  { key = 'n', mods = 'CMD|CTRL', action = act.SpawnWindow },
-  {
-    key = 'q',
-    mods = 'CMD',
-    action = act.QuitApplication,
-  },
-  {
-    key = 'p',
-    mods = 'CMD|SHIFT',
-    action = act.ActivateCommandPalette,
-  },
-  {
-    key = 'p',
-    mods = 'CMD',
-    action = act.ShowLauncher,
-  },
-  {
-    key = 'i',
-    mods = 'CMD|CTRL',
-    action = act.ActivateTabRelative(-1)
-  },
-  {
-    key = 'o',
-    mods = 'CMD|CTRL',
-    action = act.ActivateTabRelative(1)
-  },
-  {
-    key = 'v',
-    mods = 'ALT',
-    action = act.ShowLauncherArgs {
-      flags = 'FUZZY|WORKSPACES',
-    },
-  },
-  {
-    key = 'Backspace',
-    mods = 'CMD',
-    action = act.ActivateCopyMode
-  },
+  { key = 'm', mods = 'CMD', action = act.DisableDefaultAssignment },
+  { key = 'w', mods = 'CMD|CTRL|SHIFT', action = act.CloseCurrentPane { confirm = false },},
+  { key = 't', mods = 'CMD|CTRL|SHIFT', action = act.SpawnTab 'CurrentPaneDomain' },
+  { key = 'n', mods = 'CMD|CTRL|SHIFT', action = act.SpawnWindow },
+  { key = 'q', mods = 'CMD', action = act.QuitApplication },
+  { key = 'p', mods = 'CMD|SHIFT', action = act.ActivateCommandPalette },
+  { key = 'p', mods = 'CMD', action = act.ShowLauncher },
+  { key = 'i', mods = 'CMD|CTRL|SHIFT', action = act.ActivateTabRelative(-1) },
+  { key = 'o', mods = 'CMD|CTRL|SHIFT', action = act.ActivateTabRelative(1) },
+  { key = 'v', mods = 'ALT', action = act.ShowLauncherArgs {flags = 'FUZZY|WORKSPACES' }},
+  { key = 'Backspace', mods = 'CMD', action = act.ActivateCopyMode},
 }
 config.key_tables = {
   search_mode = {
