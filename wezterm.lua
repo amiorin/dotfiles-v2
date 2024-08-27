@@ -245,23 +245,21 @@ config.keys = {
       act.SendKey { key = 'o', mods = '' },
     },
   },
-  -- { key = '{', mods = 'CMD|SHIFT',
-  --   action = act.Multiple {
-  --     act.SendKey { key = 'b', mods = 'CTRL' },
-  --     act.SendKey { key = 'i', mods = '' },
-  --   },
-  -- },
-  -- { key = '}', mods = 'CMD|SHIFT',
-  --   action = act.Multiple {
-  --     act.SendKey { key = 'b', mods = 'CTRL' },
-  --     act.SendKey { key = 'o', mods = '' },
-  --   },
-  -- },
+  { key = '{', mods = 'CMD|SHIFT',
+    action = act.Multiple {
+      act.SendKey { key = 'w', mods = 'CTRL' },
+      act.SendKey { key = 'r', mods = '' },
+    },
+  },
+  { key = '}', mods = 'CMD|SHIFT',
+    action = act.Multiple {
+      act.SendKey { key = 'w', mods = 'CTRL' },
+      act.SendKey { key = 'o', mods = 'CTRL' },
+    },
+  },
   -- Turn off the default CMD-m Hide action, allowing CMD-m to
   -- be potentially recognized and handled by the tab
   { key = 'm', mods = 'CMD', action = act.DisableDefaultAssignment },
-  { key = '{', mods = 'CMD|SHIFT', action = act.DisableDefaultAssignment },
-  { key = '}', mods = 'CMD|SHIFT', action = act.DisableDefaultAssignment },
   { key = 'w', mods = 'CMD|CTRL|SHIFT', action = act.CloseCurrentPane { confirm = false },},
   { key = 't', mods = 'CMD|CTRL|SHIFT', action = act.SpawnTab 'CurrentPaneDomain' },
   { key = 'n', mods = 'CMD|CTRL|SHIFT', action = act.SpawnWindow },
