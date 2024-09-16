@@ -102,8 +102,8 @@ config.keys = {
   {
     key = 'z', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
-      act.SendKey { key = 'z', mods = '' },
+      act.SendKey { key = 'c', mods = 'CTRL' },
+      act.SendKey { key = 'z', mods = 'CTRL' },
     },
   },
   {
