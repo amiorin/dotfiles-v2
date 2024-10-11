@@ -1,22 +1,23 @@
 .PHONY: backup
 backup:
-	cp ~/.alacritty.yml alacritty.yml
-	cp ~/.tmux.conf tmux.conf
-	cp ~/.config/fish/config.fish config.fish
-	cp ~/.config/skhd/skhdrc skhdrc
-	cp ~/.config/yabai/yabairc yabairc
-	cp ~/.local/fixterm fixterm
-	cp ~/.local/bin/24-bit-color.sh 24-bit-color.sh
-	cp ~/.local/bin/sessions.sh sessions.sh
-	cp ~/.tmux/plugins/tmuxifier/layouts/* tmuxifier
-	cp ~/.config/wezterm/wezterm.lua wezterm.lua
-	cp ~/.config/neovide/config.toml config.toml
-	cp ~/.config/direnv/direnv.toml direnv.toml
-	cp ~/.config/zellij/config.kdl config.kdl
-	cp ~/.config/zellij/layouts/minimal.kdl dotfiles/zellij/layouts/minimal.kdl
-	cp ~/.config/atuin/config.toml dotfiles/atuin/config.toml
-	cp ~/.config/starship.toml dotfiles/starship/starship.toml
-	cp ~/.local/bin/happy-emacs dotfiles/bin/happy-emacs
+	cp ~/amiorin/.alacritty.yml alacritty.yml
+	cp ~/amiorin/.tmux.conf tmux.conf
+	cp ~/amiorin/.config/fish/config.fish config.fish
+	cp ~/amiorin/.config/skhd/skhdrc skhdrc
+	cp ~/amiorin/.config/yabai/yabairc yabairc
+	cp ~/amiorin/.local/fixterm fixterm
+	cp ~/amiorin/.local/bin/24-bit-color.sh 24-bit-color.sh
+	cp ~/amiorin/.local/bin/sessions.sh sessions.sh
+	cp ~/amiorin/.tmux/plugins/tmuxifier/layouts/* tmuxifier
+	cp ~/amiorin/.config/wezterm/wezterm.lua wezterm.lua
+	cp ~/amiorin/.config/neovide/config.toml config.toml
+	cp ~/amiorin/.config/direnv/direnv.toml direnv.toml
+	cp ~/amiorin/.config/zellij/config.kdl config.kdl
+	cp ~/amiorin/.config/zellij/layouts/minimal.kdl dotfiles/zellij/layouts/minimal.kdl
+	cp ~/amiorin/.config/atuin/config.toml dotfiles/atuin/config.toml
+	cp ~/amiorin/.config/starship.toml dotfiles/starship/starship.toml
+	cp ~/amiorin/.local/bin/happy-emacs dotfiles/bin/happy-emacs
+	cp ~/amiorin/.aerospace.toml dotfiles/aerospace/aerospace.toml
 
 .PHONY: install
 install:
