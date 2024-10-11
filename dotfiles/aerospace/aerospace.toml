@@ -125,8 +125,8 @@ f9 = 'workspace 9'
 f10 = 'workspace 10'
 
 
-f11 = ['move-node-to-monitor --wrap-around next', 'focus-monitor --wrap-around next']
-f12 = 'layout accordion tiles'
+f11 = 'layout accordion tiles'
+f12 = ['move-node-to-monitor --wrap-around next', 'focus-monitor --wrap-around next']
 f13 = 'focus left'
 f16 = 'focus right'
 
