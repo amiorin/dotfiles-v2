@@ -2,7 +2,6 @@
 backup:
 	cp ~/amiorin/.config/fish/config.fish config.fish
 	cp ~/amiorin/.config/skhd/skhdrc skhdrc
-	cp ~/amiorin/.local/bin/fixterm fixterm
 	cp ~/amiorin/.local/bin/24-bit-color.sh 24-bit-color.sh
 	cp ~/amiorin/.config/wezterm/wezterm.lua wezterm.lua
 	cp ~/amiorin/.config/direnv/direnv.toml direnv.toml
@@ -30,7 +29,6 @@ install:
 	cp dotfiles/starship/starship.toml ~/amiorin/.config/starship.toml
 
 	mkdir -p ~/amiorin/.local/bin
-	cp fixterm ~/amiorin/.local/fixterm
 	cp 24-bit-color.sh ~/amiorin/.local/bin/24-bit-color.sh
 
 	cp dotfiles/aerospace/aerospace.toml ~/amiorin/.aerospace.toml
