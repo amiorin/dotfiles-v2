@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "uid": 17515533355909551943,
+  "uid": 17515533355909552000,
   "layout": [
     [
       [
@@ -19,7 +19,7 @@
       ],
       [
         "LSFT_T(KC_Z)",
-        "KC_X",
+        "LALT_T(KC_X)",
         "KC_C",
         "KC_V",
         "KC_B"
@@ -49,8 +49,8 @@
         "KC_N",
         "KC_M",
         "KC_COMMA",
-        "KC_DOT",
-        "LSFT_T(KC_QUOTE)"
+        "LALT_T(KC_DOT)",
+        "LSFT_T(KC_SLASH)"
       ],
       [
         "LT2(KC_SPACE)",
@@ -62,24 +62,24 @@
     ],
     [
       [
-        "KC_F2",
+        "KC_F5",
         "KC_F6",
         "KC_F7",
         "KC_F8",
-        "KC_F10"
-      ],
-      [
-        "KC_F1",
-        "KC_F3",
-        "KC_F4",
-        "KC_F5",
         "KC_F9"
       ],
       [
+        "KC_F1",
+        "KC_F2",
+        "KC_F3",
+        "KC_F4",
+        "KC_F10"
+      ],
+      [
         "LSFT_T(KC_1)",
-        "LGUI_T(KC_2)",
+        "LALT_T(KC_2)",
         "LCTL_T(KC_3)",
-        "LALT_T(KC_4)",
+        "LGUI_T(KC_4)",
         "KC_5"
       ],
       [
@@ -93,8 +93,8 @@
         "KC_F11",
         "KC_F12",
         "KC_F13",
-        "KC_F14",
-        "KC_F15"
+        "KC_F16",
+        "KC_F17"
       ],
       [
         "KC_LEFT",
@@ -105,9 +105,9 @@
       ],
       [
         "KC_6",
-        "LALT_T(KC_7)",
+        "LGUI_T(KC_7)",
         "LCTL_T(KC_8)",
-        "LGUI_T(KC_9)",
+        "LALT_T(KC_9)",
         "LSFT_T(KC_0)"
       ],
       [
@@ -135,9 +135,9 @@
       ],
       [
         "LSFT_T(KC_MINUS)",
-        "LGUI_T(KC_EQUAL)",
+        "LALT_T(KC_EQUAL)",
         "LCTL_T(KC_LBRACKET)",
-        "LALT_T(KC_RBRACKET)",
+        "LGUI_T(KC_RBRACKET)",
         "LSFT(KC_3)"
       ],
       [
@@ -163,10 +163,10 @@
       ],
       [
         "LSFT(KC_8)",
-        "LALT_T(KC_SCOLON)",
+        "LGUI_T(KC_SCOLON)",
         "LCTL_T(KC_GRAVE)",
-        "LGUI_T(KC_BSLASH)",
-        "LSFT_T(KC_SLASH)"
+        "LALT_T(KC_BSLASH)",
+        "LSFT_T(KC_QUOTE)"
       ],
       [
         "KC_TRNS",
@@ -747,18 +747,18 @@
       "DF(3)"
     ],
     [
-      "LGUI_T(KC_TAB)",
-      "LCTL_T(KC_ENTER)",
-      "KC_NO",
-      "KC_NO",
-      "OSM(MOD_LALT)"
-    ],
-    [
       "KC_S",
       "KC_D",
       "KC_F",
       "KC_NO",
       "DF(3)"
+    ],
+    [
+      "KC_NO",
+      "KC_NO",
+      "KC_NO",
+      "KC_NO",
+      "KC_NO"
     ],
     [
       "KC_NO",
@@ -997,7 +997,7 @@
       "options": 135
     },
     {
-      "trigger": "KC_DOT",
+      "trigger": "LALT_T(KC_DOT)",
       "replacement": "RALT(KC_E)",
       "layers": 1,
       "trigger_mods": 2,
@@ -1006,7 +1006,7 @@
       "options": 135
     },
     {
-      "trigger": "LSFT_T(KC_QUOTE)",
+      "trigger": "LSFT_T(KC_SLASH)",
       "replacement": "RALT(KC_U)",
       "layers": 1,
       "trigger_mods": 2,
@@ -1024,7 +1024,7 @@
       "options": 135
     },
     {
-      "trigger": "KC_DOT",
+      "trigger": "LALT_T(KC_DOT)",
       "replacement": "C_S(KC_PGDOWN)",
       "layers": 1,
       "trigger_mods": 8,
