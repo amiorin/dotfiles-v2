@@ -39,8 +39,8 @@ ctrl-f13 = 'move up'
 ctrl-f16 = 'move right'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
-alt-shift-minus = 'resize smart -50'
-alt-shift-equal = 'resize smart +50'
+# alt-shift-minus = 'resize smart -50'
+# alt-shift-equal = 'resize smart +50'
 
 f1 = 'workspace 1'
 f2 = 'workspace 2'
