@@ -22,25 +22,11 @@ outer.right =      0
 10 = 'secondary'
 
 [mode.main.binding]
-# See: https://nikitabobko.github.io/AeroSpace/commands#layout
-# alt-slash = 'layout tiles horizontal vertical'
-# alt-comma = 'layout accordion horizontal vertical'
+f11 = 'resize smart -50'
+f12 = 'resize smart +50'
 
-# See: https://nikitabobko.github.io/AeroSpace/commands#focus
-f11 = 'focus left'
-f12 = 'focus down'
-f13 = 'focus up'
+f13 = 'focus left'
 f16 = 'focus right'
-
-# See: https://nikitabobko.github.io/AeroSpace/commands#move
-ctrl-f11 = 'move left'
-ctrl-f12 = 'move down'
-ctrl-f13 = 'move up'
-ctrl-f16 = 'move right'
-
-# See: https://nikitabobko.github.io/AeroSpace/commands#resize
-# alt-shift-minus = 'resize smart -50'
-# alt-shift-equal = 'resize smart +50'
 
 f1 = 'workspace 1'
 f2 = 'workspace 2'
@@ -53,13 +39,6 @@ f8 = 'workspace 8'
 f9 = 'workspace 9'
 f10 = 'workspace 10'
 
-# f11 = 'layout accordion tiles'
-# ctrl-f11 = 'layout tiles horizontal vertical'
-# f12 = ['move-node-to-monitor --wrap-around next', 'focus-monitor --wrap-around next']
-# f13 = 'focus left'
-# f16 = 'focus right'
-# ctrl-f13 = 'move left'
-# ctrl-f16 = 'move right'
 f17 = 'mode service'
 
 ctrl-f1 = 'move-node-to-workspace 1'
@@ -80,12 +59,18 @@ esc = ['reload-config', 'mode main']
 f1 = ['layout accordion tiles', 'mode main']
 # (s)end to next monitor
 f2 = ['move-node-to-monitor --wrap-around next', 'focus-monitor --wrap-around next', 'mode main']
+# (d)isable
+f3 = ['layout floating tiling', 'mode main']
+# (f)ullscreen
+f4 = ['fullscreen', 'mode main']
 # (r)eset
-f8 = ['flatten-workspace-tree', 'mode main'] # reset layout
-# (f)loat
-f4 = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+f8 = ['flatten-workspace-tree', 'mode main']
 backspace = ['close-all-windows-but-current', 'mode main']
-f11 = ['join-with left', 'mode main']
-f12 = ['join-with down', 'mode main']
-f13 = ['join-with up', 'mode main']
-f16 = ['join-with right', 'mode main']
+
+f13 = ['focus up', 'mode main']
+f16 = ['focus down', 'mode main']
+
+left = 'move left'
+down = 'move down'
+up = 'move up'
+right = 'move right'
