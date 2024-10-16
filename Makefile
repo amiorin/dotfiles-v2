@@ -8,6 +8,7 @@ backup:
 	cp ~/amiorin/.config/atuin/config.toml dotfiles/atuin/config.toml
 	cp ~/amiorin/.config/starship.toml dotfiles/starship/starship.toml
 	cp ~/amiorin/.aerospace.toml dotfiles/aerospace/aerospace.toml
+	cp ~/amiorin/.local/bin/dev dotfiles/bin/dev
 
 .PHONY: install
 install:
@@ -32,3 +33,5 @@ install:
 	cp 24-bit-color.sh ~/amiorin/.local/bin/24-bit-color.sh
 
 	cp dotfiles/aerospace/aerospace.toml ~/amiorin/.aerospace.toml
+
+	cp dotfiles/bin/dev ~/amiorin/.local/bin/dev
