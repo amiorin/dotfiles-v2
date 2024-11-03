@@ -64,7 +64,7 @@ f3 = ['layout floating tiling', 'mode main']
 # (f)ullscreen
 f4 = ['fullscreen', 'mode main']
 # (r)eset
-f8 = ['flatten-workspace-tree', 'mode main']
+f9 = ['flatten-workspace-tree', 'mode main']
 backspace = ['close-all-windows-but-current', 'mode main']
 
 f13 = ['focus up', 'mode main']
