@@ -19,7 +19,7 @@ outer.top =        0
 outer.right =      0
 
 [workspace-to-monitor-force-assignment]
-10 = 'secondary'
+5 = 'secondary'
 
 [mode.main.binding]
 cmd-f13 = 'focus left'
