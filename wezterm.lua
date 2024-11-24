@@ -28,7 +28,7 @@ config.hide_tab_bar_if_only_one_tab = true
 -- Spawn a fish shell in login mode
 config.default_prog = { '/opt/homebrew/bin/fish', '-l' }
 config.font = wezterm.font 'JetBrains Mono'
-config.font_size = 18
+config.font_size = 16
 config.keys = {
   {
     key = 'b', mods = 'CMD',
