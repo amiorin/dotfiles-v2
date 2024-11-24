@@ -33,57 +33,57 @@ config.keys = {
   {
     key = 'b', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'b', mods = '' },
     },
   },
   {
     key = 'x', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'x', mods = '' },
     },
   },
   {
     key = 'c', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'c', mods = '' },
     },
   },
   { key = 'f', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'f', mods = '' },
     },
   },
   { key = '1', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = '1', mods = '' },
     },
   },
   { key = '2', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = '2', mods = '' },
     },
   },
   { key = '3', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = '3', mods = '' },
     },
   },
   { key = '4', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = '4', mods = '' },
     },
   },
   { key = '5', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = '5', mods = '' },
     },
   },
@@ -95,7 +95,7 @@ config.keys = {
   {
     key = 'u', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'u', mods = '' },
     },
   },
@@ -110,7 +110,7 @@ config.keys = {
     key = 'PageUp',
     mods = 'CTRL|SHIFT',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = ',', mods = '' },
     },
   },
@@ -118,7 +118,7 @@ config.keys = {
     key = 'PageDown',
     mods = 'CTRL|SHIFT',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = '.', mods = '' },
     },
   },
@@ -174,49 +174,49 @@ config.keys = {
   {
     key = 'h', mods = 'CMD|CTRL',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'h', mods = '' },
     },
   },
   {
     key = 'j', mods = 'CMD|CTRL',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'j', mods = '' },
     },
   },
   {
     key = 'k', mods = 'CMD|CTRL',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'k', mods = '' },
     },
   },
   {
     key = 'l', mods = 'CMD|CTRL',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'l', mods = '' },
     },
   },
   {
     key = 't', mods = 'CMD|CTRL',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 't', mods = '' },
     },
   },
   {
     key = 'w', mods = 'CMD|CTRL',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'w', mods = '' },
     },
   },
   {
     key = 'n', mods = 'CMD|CTRL',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'n', mods = '' },
     },
   },
@@ -229,19 +229,19 @@ config.keys = {
   },
   { key = 'e', mods = 'CMD',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'e', mods = '' },
     },
   },
   { key = 'i', mods = 'CMD|CTRL',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'i', mods = '' },
     },
   },
   { key = 'o', mods = 'CMD|CTRL',
     action = act.Multiple {
-      act.SendKey { key = 'b', mods = 'CTRL' },
+      act.SendKey { key = 'a', mods = 'CTRL' },
       act.SendKey { key = 'o', mods = '' },
     },
   },
