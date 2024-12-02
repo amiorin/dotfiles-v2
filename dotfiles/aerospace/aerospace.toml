@@ -22,8 +22,8 @@ outer.right =      0
 5 = 'secondary'
 
 [mode.main.binding]
-cmd-f13 = 'focus left'
-cmd-f16 = 'focus right'
+cmd-f13 = 'focus left --boundaries-action wrap-around-the-workspace'
+cmd-f16 = 'focus right --boundaries-action wrap-around-the-workspace'
 
 cmd-f1 = 'workspace 1'
 cmd-f2 = 'workspace 2'
