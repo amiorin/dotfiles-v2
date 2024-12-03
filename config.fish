@@ -15,10 +15,8 @@ fish_add_path /Applications/WezTerm.app/Contents/MacOS
 fish_add_path /Applications/neovide.app/Contents/MacOS
 # tmuxifier init - fish | source
 
-set -gx EDITOR "emacsclient -a '' -t"
 # for lazygit https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#user-config
 # set -gx XDG_CONFIG_HOME "$HOME/.config"
-alias emacs=$EDITOR
 set -gx POETRY_VIRTUALENVS_IN_PROJECT true
 # https://www.packetmischief.ca/2016/09/06/ssh-agent-on-os-x/
 set -gx SSH_AUTH_SOCK (launchctl getenv SSH_AUTH_SOCK)
@@ -55,38 +53,6 @@ function nvims
     env NVIM_APPNAME=$config nvim $argv
 end
 
-# test sqls from scratch
-alias emacs-sql="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.sql"
-# test sqls
-alias emacs-space="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.space"
-# test fuzzy search
-alias emacs-doom-dev="env DOOMDIR=$HOME/.doom-dev /opt/homebrew/bin/emacs --init-directory $HOME/.emacs.doom-dev"
-# test prelude
-alias emacs-prelude="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.prelude"
-# test god
-alias emacs-god="/opt/homebrew/bin/emacs --init-directory $HOME/.emacs.god"
-function e
-    set items doom doom-dev space sql prelude
-    set config (printf "%s\n" $items | fzf --prompt=" » " --height=~50% --layout=reverse --border --exit-0)
-    if [ -z $config ]
-        echo "Nothing selected"
-        return 0
-    else if [ $config = doom ]
-        eval $EDITOR
-        return 0
-    else if [ $config = doom-dev ]
-         env DOOMDIR=$HOME/.doom-dev /opt/homebrew/bin/emacs --init-directory $HOME/.emacs.doom-dev
-         return 0
-    else if [ $config = sql ]
-        set config "$HOME/.emacs.sql"
-    else if [ $config = space ]
-        set config "$HOME/.emacs.space"
-    else if [ $config = prelude ]
-        set config "$HOME/.emacs.prelude"
-    end
-    /opt/homebrew/bin/emacs --init-directory $config
-end
-
 function login_aws
     set items single-stg single-prod multi-stg multi-prod
     set account (printf "%s\n" $items | fzf --prompt=" OneFootball AWS account » " --height=~50% --layout=reverse --border --exit-0)
@@ -113,15 +79,5 @@ function login_aws
         echo "Connecting to Data Prod"
         set -gx SAML2AWS_URL https://sso.jumpcloud.com/saml2/awsdatateam
         saml2aws login --force
-    end
-end
-
-if status is-interactive
-    set emacs_exp '(with-current-buffer (window-buffer (selected-window)) (projectile-project-root))'
-    set emacs_dir (emacsclient -a 'echo' --eval "$emacs_exp" 2> /dev/null)
-    if test "$emacs_dir" != "nil"
-        if test "$emacs_dir" != "$emacs_exp"
-            cd (echo $emacs_dir | jq -r)
-        end
     end
 end
