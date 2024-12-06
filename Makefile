@@ -9,6 +9,8 @@ backup:
 	cp ~/amiorin/.config/starship.toml dotfiles/starship/starship.toml
 	cp ~/amiorin/.aerospace.toml dotfiles/aerospace/aerospace.toml
 	cp ~/amiorin/.local/bin/dev dotfiles/bin/dev
+	cp ~/amiorin/.config/zellij/config.kdl dotfiles/zellij/config.kdl
+	cp ~/amiorin/.config/zellij/layouts/minimal.kdl dotfiles/zellij/layouts/minimal.kdl
 
 .PHONY: install
 install:
@@ -35,3 +37,7 @@ install:
 	cp dotfiles/aerospace/aerospace.toml ~/amiorin/.aerospace.toml
 
 	cp dotfiles/bin/dev ~/amiorin/.local/bin/dev
+
+	mkdir -p ~/amiorin/.config/zellij/layouts
+	cp dotfiles/zellij/config.kdl ~/amiorin/.config/zellij/config.kdl
+	cp dotfiles/zellij/layouts/minimal.kdl ~/amiorin/.config/zellij/layouts/minimal.kdl

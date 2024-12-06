@@ -23,6 +23,8 @@ config.window_padding = {
 
 config.hide_tab_bar_if_only_one_tab = true
 
+config.enable_kitty_keyboard = true
+
 -- For example, changing the color scheme:
 --config.color_scheme = 'Batman'
 -- Spawn a fish shell in login mode
