@@ -1,4 +1,5 @@
 #!/bin/bash
+# This file was originally taken from iterm2 https://github.com/gnachman/iTerm2/blob/master/tests/24-bit-color.sh
 #
 #   This file echoes a bunch of 24-bit color codes
 #   to the terminal to demonstrate its functionality.
@@ -9,7 +10,8 @@
 
 setBackgroundColor()
 {
-    echo -en "\x1b[48;2;$1;$2;$3""m"
+    #printf '\x1bPtmux;\x1b\x1b[48;2;%s;%s;%sm' $1 $2 $3
+    printf '\x1b[48;2;%s;%s;%sm' $1 $2 $3
 }
 
 resetOutput()
@@ -58,7 +60,7 @@ for i in `seq 0 127`; do
     echo -en " "
 done
 resetOutput
-for i in `seq 255 128`; do
+for i in `seq 255 -1 128`; do
     setBackgroundColor $i 0 0
     echo -en " "
 done
@@ -69,7 +71,7 @@ for i in `seq 0 127`; do
     echo -n " "
 done
 resetOutput
-for i in `seq 255 128`; do
+for i in `seq 255 -1 128`; do
     setBackgroundColor 0 $i 0
     echo -n " "
 done
@@ -80,7 +82,7 @@ for i in `seq 0 127`; do
     echo -n " "
 done
 resetOutput
-for i in `seq 255 128`; do
+for i in `seq 255 -1 128`; do
     setBackgroundColor 0 0 $i
     echo -n " "
 done
@@ -91,9 +93,8 @@ for i in `seq 0 127`; do
     echo -n " "
 done
 resetOutput
-for i in `seq 255 128`; do
+for i in `seq 255 -1 128`; do
     setBackgroundColor `rainbowColor $i`
     echo -n " "
 done
 resetOutput
-
