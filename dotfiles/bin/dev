@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
-gh auth token -u onefootball-data-insights > /dev/null 2>&1 || (echo Already inside "dev" && exit 1)
+gh auth token -u alberto-of > /dev/null 2>&1 || (echo Already inside "dev" && exit 1)
 [ $? -eq 0 ] || exit 0
 
 docker run --rm -it \
            -e DEV=local \
-           -e GITHUB_TOKEN=`gh auth token -u onefootball-data-insights` \
-           -e GHP_TOKEN=`gh auth token -u onefootball-data-insights` \
-           -e GH_TOKEN=`gh auth token -u onefootball-data-insights` \
+           -e GITHUB_TOKEN=`gh auth token -u alberto-of` \
+           -e GHP_TOKEN=`gh auth token -u alberto-of` \
+           -e GH_TOKEN=`gh auth token -u alberto-of` \
            -e AMIORIN_TOKEN=`gh auth token -u amiorin` \
            -e ATUIN_LOGIN="`cat ~/.atuin-login`" \
            --net=host \
@@ -19,6 +19,8 @@ docker run --rm -it \
            -v /Users/amiorin/code/personal:/home/vscode/code/personal \
            -v /Users/amiorin/code/of:/home/vscode/workspaces \
            -v /Users/amiorin:/home/vscode/amiorin \
+           -v /Users/amiorin/code/of/naughty-thinkable-devbox/dotfiles/doomemacs/config.el:/home/vscode/.doom.d/config.el \
            ghcr.io/motain/naughty-thinkable-devbox \
-           fish -c 'zellij attach --create DEV && pkill emacs && atuin sync' \
+           # fish -c 'zellij attach --create ALBERTO_LOCAL && pkill emacs && atuin sync' \
+           fish \
 && kill `ps -o ppid= -p $$`

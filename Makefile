@@ -4,6 +4,7 @@ backup:
 	cp ~/amiorin/.config/skhd/skhdrc skhdrc
 	cp ~/amiorin/.local/bin/24-bit-color.sh 24-bit-color.sh
 	cp ~/amiorin/.config/wezterm/wezterm.lua wezterm.lua
+	cp ~/amiorin/.config/ghostty/config dotfiles/ghostty/config
 	cp ~/amiorin/.config/direnv/direnv.toml direnv.toml
 	cp ~/amiorin/.config/atuin/config.toml dotfiles/atuin/config.toml
 	cp ~/amiorin/.config/starship.toml dotfiles/starship/starship.toml

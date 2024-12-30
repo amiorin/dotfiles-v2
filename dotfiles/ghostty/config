@@ -1,0 +1,4 @@
+macos-titlebar-style = hidden
+# window-decoration = false
+font-size = 16
+keybind = clear
