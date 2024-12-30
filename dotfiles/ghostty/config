@@ -2,3 +2,11 @@ macos-titlebar-style = hidden
 # window-decoration = false
 font-size = 16
 keybind = clear
+keybind = opt+shift+r=reload_config
+keybind = opt+shift+n=new_window
+keybind = opt+shift+w=close_surface
+keybind = opt+shift+t=new_tab
+keybind = cmd+v=paste_from_clipboard
+keybind = cmd+minus=decrease_font_size:1
+keybind = cmd+equal=increase_font_size:1
+keybind = cmd+zero=reset_font_size
