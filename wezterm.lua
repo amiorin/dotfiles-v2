@@ -39,6 +39,7 @@ config.keys = {
   { key = 't', mods = 'ALT|SHIFT', action = act.SpawnTab 'CurrentPaneDomain' },
   { key = 'i', mods = 'ALT|SHIFT', action = act.ActivateTabRelative(-1) },
   { key = 'o', mods = 'ALT|SHIFT', action = act.ActivateTabRelative(1) },
+  { key = 'v', mods = 'CMD', action = act.PasteFrom 'Clipboard' },
 }
 config.key_tables = {
 }
