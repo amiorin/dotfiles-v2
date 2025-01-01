@@ -29,7 +29,7 @@ config.enable_kitty_keyboard = true
 --config.color_scheme = 'Batman'
 -- Spawn a fish shell in login mode
 config.default_prog = { '/opt/homebrew/bin/fish', '-l' }
-config.font = wezterm.font 'JetBrains Mono'
+config.font = wezterm.font 'JetBrainsMonoNL Nerd Font Mono'
 config.font_size = 16
 config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' }
 config.disable_default_key_bindings = true

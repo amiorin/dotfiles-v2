@@ -2,7 +2,8 @@ macos-titlebar-style = hidden
 mouse-hide-while-typing = true
 clipboard-paste-protection = false
 copy-on-select = true
-# window-decoration = false
+
+font-family = JetBrainsMonoNL Nerd Font Mono
 font-size = 16
 font-feature = -liga
 font-feature = -calt
