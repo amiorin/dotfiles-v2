@@ -42,6 +42,7 @@ keybinds clear-defaults=true {
     }
     shared_except "normal" "locked" {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
+        bind "Super Ctrl t" { NewTab; }
     }
     shared_except "tmux" "locked" {
         bind "Ctrl a" { SwitchToMode "Tmux"; }

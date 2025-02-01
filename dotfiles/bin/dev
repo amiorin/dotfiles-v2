@@ -19,8 +19,6 @@ docker run --rm -it \
            -v /Users/amiorin/code/personal:/home/vscode/code/personal \
            -v /Users/amiorin/code/of:/home/vscode/workspaces \
            -v /Users/amiorin:/home/vscode/amiorin \
-           -v /Users/amiorin/code/of/naughty-thinkable-devbox/dotfiles/doomemacs/config.el:/home/vscode/.doom.d/config.el \
-           -v /Users/amiorin/code/of/naughty-thinkable-devbox/dotfiles/zellij/config.kdl:/home/vscode/.config/zellij/config.kdl \
            ghcr.io/motain/naughty-thinkable-devbox \
-           fish -c 'zellij attach --create ALBERTO_GHOSTTY_LOCAL && pkill emacs && atuin sync' \
+           fish -c 'zellij attach --create ALBERTO_MACOS && begin pkill emacs || true; end && atuin sync' \
 && kill `ps -o ppid= -p $$`
