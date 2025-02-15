@@ -86,7 +86,7 @@ shift-down = 'resize height +50'
 [mode.service.binding]
 cmd-f11 = 'mode move'
 cmd-f12 = 'mode focus'
-cmd-f17 = 'mode main'
+cmd-f17 = ['exec-and-forget pbcopy < /dev/null','mode main']
 esc = ['reload-config', 'mode main']
 # (a)lternate layout
 cmd-f1 = ['layout accordion tiles', 'mode main']
