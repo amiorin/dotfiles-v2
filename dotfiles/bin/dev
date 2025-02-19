@@ -1,7 +1,16 @@
 #!/usr/bin/env bash
 
-gh auth token -u alberto-of > /dev/null 2>&1 || (echo Already inside "dev" && exit 1)
-[ $? -eq 0 ] || exit 0
+#gh auth token -u amiorin > /dev/null 2>&1 || (echo Already inside "dev" && exit 1)
+#[ $? -eq 0 ] || exit 0
+
+mkdir -p ~/.emacs.d/.local/cache
+touch ~/.emacs.d/.local/cache/recentf
+mkdir -p ~/.m2
+mkdir -p ~/.local/bin
+mkdir -p ~/.config
+mkdir -p ~/.aws
+mkdir -p ~/code/personal
+mkdir -p ~/code/of
 
 docker run --rm -it \
            -e DEV=local \

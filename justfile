@@ -1,4 +1,3 @@
-.PHONY: backup
 backup:
 	cp ~/amiorin/.config/fish/config.fish config.fish
 	cp ~/amiorin/.config/skhd/skhdrc skhdrc
@@ -15,7 +14,6 @@ backup:
 	cp ~/amiorin/.config/zellij/config.kdl dotfiles/zellij/config.kdl
 	cp ~/amiorin/.config/zellij/layouts/minimal.kdl dotfiles/zellij/layouts/minimal.kdl
 
-.PHONY: install
 install:
 	mkdir -p ~/amiorin/.config/fish
 	cp config.fish ~/amiorin/.config/fish/config.fish
