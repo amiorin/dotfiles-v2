@@ -21,3 +21,5 @@ keybind = cmd+v=paste_from_clipboard
 keybind = cmd+minus=decrease_font_size:1
 keybind = cmd+equal=increase_font_size:1
 keybind = cmd+zero=reset_font_size
+
+macos-option-as-alt = true
