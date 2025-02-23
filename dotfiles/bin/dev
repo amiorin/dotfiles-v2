@@ -16,12 +16,10 @@ mkdir -p ~/code/personal
 mkdir -p ~/code/of
 
 docker run --rm -it \
-           -e DEV=local \
            -e GITHUB_TOKEN=`gh auth token -u alberto-of` \
            -e GHP_TOKEN=`gh auth token -u alberto-of` \
            -e GH_TOKEN=`gh auth token -u alberto-of` \
            -e AMIORIN_TOKEN=`gh auth token -u amiorin` \
-           -e ATUIN_LOGIN="`cat ~/.atuin-login`" \
            --net=host \
            -v /var/run/docker.sock:/var/run/docker.sock \
            -v /Users/amiorin/.emacs.d/.local/cache/recentf:/home/vscode/.emacs.d/.local/cache/recentf \
