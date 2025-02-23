@@ -11,7 +11,6 @@ mkdir -p ~/.ssh
 chmod 0700 ~/.ssh
 mkdir -p ~/.local/share/atuin
 mkdir -p ~/.ansible
-mkdir -p ~/.docker
 mkdir -p ~/.local/bin
 mkdir -p ~/code/personal
 mkdir -p ~/code/of
@@ -31,7 +30,6 @@ docker run --rm -it \
            -v /Users/amiorin/.ssh:/home/vscode/.ssh \
            -v /Users/amiorin/.local/share/atuin:/home/vscode/.local/share/atuin \
            -v /Users/amiorin/.ansible:/home/vscode/.ansible \
-           -v /Users/amiorin/.docker:/home/vscode/.docker \
            -v /Users/amiorin/.local/bin/dev:/home/vscode/.local/bin/dev \
            -v /Users/amiorin/code/personal:/home/vscode/code/personal \
            -v /Users/amiorin/code/of:/home/vscode/workspaces \
