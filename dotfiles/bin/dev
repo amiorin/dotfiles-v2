@@ -33,5 +33,5 @@ docker run --rm -it \
            -v /Users/amiorin/code/of:/home/vscode/workspaces \
            -v /Users/amiorin:/home/vscode/amiorin \
            ghcr.io/motain/naughty-thinkable-devbox \
-           fish -c 'zellij attach --create ALBERTO_MACOS && begin pkill emacs || true; end && atuin sync' \
+           fish -c 'zellij attach --create ALBERTO_MACOS && begin pkill emacs || true; end' \
 && kill `ps -o ppid= -p $$`
