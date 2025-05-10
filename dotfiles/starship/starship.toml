@@ -5,3 +5,6 @@ truncate_to_repo = false
 disabled = true
 [lua]
 disabled = true
+[custom.current_dir]
+command = "printf '\\e]%s\\e\\\\' '51;A'(whoami)'@'(hostname)':'(pwd)"
+when = "true"
