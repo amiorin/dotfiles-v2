@@ -7,11 +7,12 @@
 #
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title emacs
+# @raycast.title Emacs
 # @raycast.mode silent
 #
 # Optional parameters:
 # @raycast.icon https://raw.githubusercontent.com/c9rgreen/emacs-macos-icon/refs/heads/main/emacs.iconset/icon_512x512%402x%402x.png
-# @raycast.packageName Raycast Scripts
+# @raycast.packageName Emacs Plus
 
-open -a Emacs && emacsclient -a '' -c
+ps -e -o comm | grep Emacs && open -a Emacs
+emacsclient -a '' -c

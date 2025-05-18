@@ -1,5 +1,3 @@
-# fix macos hide window
-cmd - h : skhd -k "ctrl - w"; skhd -k "h"
 # prev tab and next tab in chrome
 cmd - i : skhd -k "shift + cmd - 0x21"
 cmd - o : skhd -k "shift + cmd - 0x1E"
