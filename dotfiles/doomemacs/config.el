@@ -17,8 +17,6 @@
 
 ;; When done with this frame, type SPC q f`?
 (setq server-client-instructions nil)
-;; No prompt
-(defalias 'doom/delete-frame-with-prompt 'delete-frame)
 
 ;; No prompt when quitting ediff
 ;; https://emacs.stackexchange.com/questions/9322/how-can-i-quit-ediff-immediately-without-having-to-type-y
@@ -344,8 +342,8 @@
 (scroll-bar-mode 0)
 
 ;; Let the desktop background show through
-(set-frame-parameter (selected-frame) 'alpha '(95 . 95))
-(add-to-list 'default-frame-alist '(alpha . (95 . 95)))
+(set-frame-parameter (selected-frame) 'alpha '(100 . 95))
+(add-to-list 'default-frame-alist '(alpha . (100 . 95)))
 
 ;; Configure fill width
 (setq visual-fill-column-width 80
@@ -464,3 +462,13 @@
   (org-show-children))
 
 (add-hook 'org-present-after-navigate-functions 'my/org-present-prepare-slide)
+
+;; shortcuts like zellij
+(map! :map 'override "C-s-t" #'tab-new)
+(map! :map 'override "C-s-w" #'tab-close)
+(map! :map 'override "s-TAB" #'tab-previous)
+(map! :map 'override "C-s-o" #'tab-next)
+(map! :map 'override "C-s-n" #'make-frame)
+
+;; Don't prompt when closing a frame
+(global-set-key [remap delete-frame] nil)
