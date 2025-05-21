@@ -81,3 +81,8 @@ function login_aws
         saml2aws login --force
     end
 end
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/amiorin/.lmstudio/bin
+# End of LM Studio CLI section
+

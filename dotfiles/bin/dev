@@ -37,6 +37,7 @@ docker run --rm -it \
            -v ~/.local/share/zoxide:/home/vscode/.local/share/zoxide \
            -v ~/.ansible:/home/vscode/.ansible \
            -v ~/.local/bin/dev:/home/vscode/.local/bin/dev \
+           -v ~/.codex:/home/vscode/.codex \
            -v ~/code/personal:/home/vscode/code/personal \
            -v ~/code/of:/home/vscode/workspaces \
            -v ~:/home/vscode/$USER \
