@@ -472,3 +472,6 @@
 
 ;; Don't prompt when closing a frame
 (global-set-key [remap delete-frame] nil)
+
+;; Esc act as quit
+(define-key key-translation-map (kbd "ESC") (kbd "C-g"))
