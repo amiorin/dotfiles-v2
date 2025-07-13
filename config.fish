@@ -1,7 +1,7 @@
-set -gx SHELL /usr/bin/fish
-devbox global shellenv --recompute | source
-
 if status is-interactive
+   set -gx SHELL /usr/bin/fish
+   devbox global shellenv --recompute | source
+
     /opt/homebrew/bin/brew shellenv | source
     starship init fish | source
     zoxide init fish | source
@@ -84,7 +84,9 @@ if status is-interactive
     alias rt="ls -l -r -a --smart-group --sort=time"
     alias u="cd .."
     alias k=kubectl
+
+    # misc
+    set -gx POETRY_VIRTUALENVS_IN_PROJECT true
+    set -gx TZ Europe/Berlin
 end
 
-set -gx POETRY_VIRTUALENVS_IN_PROJECT true
-set -gx TZ Europe/Berlin
