@@ -87,3 +87,5 @@ make status
 make install
 ```
 
+# Macos settings
+![My awesome image](https://github.com/amiorin/dotfiles-v2/blob/8f449d3c2f7a0a65c7a29cb2dfb04471f5098a7b/Keyboard.png)
