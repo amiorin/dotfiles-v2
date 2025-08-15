@@ -1,5 +1,6 @@
 #	https://gist.github.com/nicm/ea9cf3c93f22e0246ec858122d9abea1
 #	tix -c ~/.local/fixterm
+#   infocmp -x xterm-ghostty | ssh YOUR-SERVER -- tic -x -
 #	Reconstructed via infocmp from file: /usr/share/terminfo/t/tmux-256color
 tmux-256color|tmux with 256 colors,
 	OTbs, OTpt, am, hs, km, mir, msgr, xenl, AX, G0,
