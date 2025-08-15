@@ -18,6 +18,10 @@
 ;; When done with this frame, type SPC q f`?
 (setq server-client-instructions nil)
 
+;; No prompt
+(map! :leader
+      :desc "Delete frame" "q f" #'delete-frame)
+
 ;; No prompt when quitting ediff
 ;; https://emacs.stackexchange.com/questions/9322/how-can-i-quit-ediff-immediately-without-having-to-type-y
 (defun disable-y-or-n-p (orig-fun &rest args)
@@ -196,8 +200,8 @@
 (map! :map 'override "s-s" #'save-buffer)
 (map! :map 'override "s-t" #'open-term-on-right)
 (map! :map 'override "s-w" #'evil-window-delete)
-(map! :map 'override "s-{" #'evil-window-rotate-downwards)
-(map! :map 'override "s-}" #'delete-other-windows)
+(map! :map 'override "s-[" #'evil-window-rotate-downwards)
+(map! :map 'override "s-]" #'delete-other-windows)
 (map! :map 'override "s-n" #'+evil/window-vsplit-and-follow)
 (map! :map 'override "s-h" #'evil-window-left)
 (map! :map 'override "s-j" #'evil-window-down)
@@ -309,7 +313,7 @@
 
 ;; use avy on s
 (setq avy-all-windows t)
-(map! :map evil-snipe-local-mode-map :nv "s" #'evil-avy-goto-char-2)
+(map! :map evil-snipe-local-mode-map :nv "s" #'evil-avy-goto-char-timer)
 
 ;; use always preview in recentf and CMD-ret for the rest
 (after! consult
@@ -334,6 +338,14 @@
 ;; I need to see the clock
 (after! vterm
   (remove-hook 'vterm-mode-hook #'hide-mode-line-mode))
+
+;; Better embark bindings
+(map! "C-<prior>" #'embark-act
+      (:map minibuffer-local-map
+       "C-<prior>"          #'embark-act
+       "C-<next> C-<prior>" #'embark-export
+       "C-<next> s-l"       #'embark-collect
+       :desc "Export to writable buffer" "C-<next> s-e" #'+vertico/embark-export-write))
 
 ;; Hide unneeded UI elements (this can even be done in my/org-present-start!)
 (add-to-list 'default-frame-alist '(undecorated-round . t))

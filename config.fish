@@ -1,5 +1,5 @@
 if status is-interactive
-   set -gx SHELL /usr/bin/fish
+   set -gx SHELL /opt/homebrew/bin/fish
    devbox global shellenv --recompute | source
 
     /opt/homebrew/bin/brew shellenv | source
