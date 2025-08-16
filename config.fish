@@ -1,6 +1,6 @@
 if status is-interactive
-   set -gx SHELL /opt/homebrew/bin/fish
-   devbox global shellenv --recompute | source
+    set -gx SHELL /opt/homebrew/bin/fish
+    devbox global shellenv --recompute | source
 
     /opt/homebrew/bin/brew shellenv | source
     starship init fish | source
@@ -12,13 +12,29 @@ if status is-interactive
     set -gx SSH_AUTH_SOCK (launchctl getenv SSH_AUTH_SOCK)
 
     # github credentials
-    source (dirname (realpath (status --current-filename)))/config.private.fish
+    if test -f (dirname (realpath (status --current-filename)))/config.private.fish
+       source (dirname (realpath (status --current-filename)))/config.private.fish
+    end
 
     # pixi
     fish_add_path $HOME/.pixi/bin
 
     # npm
     fish_add_path $HOME/.npm-global/bin
+
+    #asdf
+    if test -z $ASDF_DATA_DIR
+        set _asdf_shims "$HOME/.asdf/shims"
+    else
+        set _asdf_shims "$ASDF_DATA_DIR/shims"
+    end
+
+    # Do not use fish_add_path (added in Fish 3.2) because it
+    # potentially changes the order of items in PATH
+    if not contains $_asdf_shims $PATH
+        set -gx --prepend PATH $_asdf_shims
+    end
+    set --erase _asdf_shims
 
     # agent setup
     if SSH_AUTH_SOCK=/tmp/$ZELLIJ_SESSION_NAME.agent ssh-add -l >/dev/null 2>&1
@@ -89,4 +105,3 @@ if status is-interactive
     set -gx POETRY_VIRTUALENVS_IN_PROJECT true
     set -gx TZ Europe/Berlin
 end
-
